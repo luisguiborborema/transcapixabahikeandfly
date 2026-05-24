@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.1">
+  <Document>
+    <Folder>
+      <name>Waypoints</name>
+      <Placemark>
+        <name>STA</name>
+        <description>Largada- Vila Pereira</description>
+        <Point>
+        <coordinates>-40.760228,-17.981389,293.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TP01</name>
+        <description>TP01 Adilson da Pedra</description>
+        <Point>
+        <coordinates>-40.821506,-18.046211,526.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TP02</name>
+        <description>TP02 Pedra da Viuva</description>
+        <Point>
+        <coordinates>-40.719219,-18.176325,357.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TP03</name>
+        <description>TP03 Cachoeira do Denzol</description>
+        <Point>
+        <coordinates>-40.796281,-18.506797,306.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TP04</name>
+        <description>TP04 Tr-s Pont-es de -guia Branca</description>
+        <Point>
+        <coordinates>-40.650228,-18.963081,543.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TP05</name>
+        <description>TP05 Pouso Oficial de Pancas</description>
+        <Point>
+        <coordinates>-40.843133,-19.225250,543.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TP06</name>
+        <description>TP06 Rampa Pedra da Colina</description>
+        <Point>
+        <coordinates>-40.866108,-19.229058,710.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TP07</name>
+        <description>TP07 Rampa do Monjolo</description>
+        <Point>
+        <coordinates>-40.968244,-19.631261,858.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TP08</name>
+        <description>TP08 Cinco Pont-es</description>
+        <Point>
+        <coordinates>-40.991733,-19.804300,1026.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TP09</name>
+        <description>TP09 Tr-s Pont-es de Afonso Cl-udio</description>
+        <Point>
+        <coordinates>-41.044753,-20.075667,817.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TP10</name>
+        <description>TP10 Forno Grande</description>
+        <Point>
+        <coordinates>-41.117778,-20.501667,1496.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TP11</name>
+        <description>TP11 Fazenda da Mata</description>
+        <Point>
+        <coordinates>-41.384444,-20.635833,830.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>TP12</name>
+        <description>TP12 Pont-es de Mimoso do Sul</description>
+        <Point>
+        <coordinates>-41.555278,-20.940000,1341.000000</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>FIN</name>
+        <description>Chegada Bom Jesus do Itabapoana</description>
+        <Point>
+        <coordinates>-41.661236,-21.137339,114.000000</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
