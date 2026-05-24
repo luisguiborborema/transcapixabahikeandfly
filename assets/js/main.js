@@ -7,6 +7,15 @@ document.addEventListener("DOMContentLoaded", () => {
   if (burger && links) {
     burger.addEventListener("click", () => {
       links.classList.toggle("nav__links--open");
+      document.body.classList.toggle("nav-is-open", links.classList.contains("nav__links--open"));
+    });
+    // Fecha menu ao clicar num link final (não em trigger de dropdown)
+    links.querySelectorAll("a").forEach((a) => {
+      a.addEventListener("click", () => {
+        if (a.closest(".nav__item--has-drop") && !a.closest(".nav__drop")) return;
+        links.classList.remove("nav__links--open");
+        document.body.classList.remove("nav-is-open");
+      });
     });
   }
 
@@ -71,8 +80,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // ---------- COUNTDOWN ----------
   const cd = document.getElementById("countdown");
   if (cd) {
-    // Próxima edição: 15 de julho de 2026 (placeholder; ajustar)
-    const target = new Date("2026-07-15T08:00:00-03:00").getTime();
+    // Próxima edição: 13 a 25 de julho de 2026 — countdown até a largada
+    const target = new Date("2026-07-13T08:00:00-03:00").getTime();
     const tick = () => {
       const diff = target - Date.now();
       if (diff < 0) {
@@ -91,6 +100,38 @@ document.addEventListener("DOMContentLoaded", () => {
     tick();
     setInterval(tick, 1000);
   }
+
+  // ---------- CARROSSEL ----------
+  document.querySelectorAll(".carousel").forEach((carousel) => {
+    const slides = carousel.querySelectorAll(".carousel__slide");
+    const dots = carousel.querySelectorAll(".carousel__dot");
+    const prev = carousel.querySelector(".carousel__btn--prev");
+    const next = carousel.querySelector(".carousel__btn--next");
+    const autoplay = parseInt(carousel.dataset.autoplay || "0", 10);
+    if (!slides.length) return;
+    let i = 0;
+    let timer = null;
+    const go = (n) => {
+      i = ((n % slides.length) + slides.length) % slides.length;
+      slides.forEach((s, k) => s.classList.toggle("is-active", k === i));
+      dots.forEach((d, k) => d.classList.toggle("is-active", k === i));
+    };
+    const stop = () => { if (timer) { clearInterval(timer); timer = null; } };
+    const start = () => { if (autoplay && !timer) timer = setInterval(() => go(i + 1), autoplay); };
+    const reset = () => { stop(); start(); };
+    prev && prev.addEventListener("click", () => { go(i - 1); reset(); });
+    next && next.addEventListener("click", () => { go(i + 1); reset(); });
+    dots.forEach((d, k) => d.addEventListener("click", () => { go(k); reset(); }));
+    carousel.addEventListener("mouseenter", stop);
+    carousel.addEventListener("mouseleave", start);
+    let tx = 0;
+    carousel.addEventListener("touchstart", (e) => { tx = e.touches[0].clientX; }, { passive: true });
+    carousel.addEventListener("touchend", (e) => {
+      const dx = e.changedTouches[0].clientX - tx;
+      if (Math.abs(dx) > 50) { go(dx > 0 ? i - 1 : i + 1); reset(); }
+    }, { passive: true });
+    start();
+  });
 
   // ---------- SCROLL REVEAL ----------
   const obs = new IntersectionObserver(

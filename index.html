@@ -12,6 +12,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="assets/css/styles.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
 </head>
 <body>
 
@@ -80,7 +81,7 @@
   </div>
 
   <div class="hero__content container">
-    <span class="hero__date">EDIÇÃO 2026 · 15 — 19 JULHO</span>
+    <span class="hero__date">EDIÇÃO 2026 · 13 — 25 JULHO</span>
     <h1 class="hero__title">TRANS<br/>CAPIXABA<span>HIKE AND FLY</span></h1>
     <p class="hero__sub">A maior travessia de caminhada e parapente do Brasil. Inspirada no Red&nbsp;Bull X‑Alps, cruzando as montanhas do Espírito Santo do interior ao litoral.</p>
     <div class="btn-row">
@@ -158,22 +159,53 @@
   </div>
 </section>
 
-<!-- =================== VÍDEO =================== -->
+<!-- =================== CARROSSEL =================== -->
 <section class="section--dark">
   <div class="container">
     <div class="section__header">
-      <div class="eyebrow">O FILME</div>
+      <div class="eyebrow">A JORNADA</div>
       <h2>Sinta a travessia</h2>
-      <p>Cinco dias caminhando e voando. Térmicas no Caparaó, pouso forçado, decolagens ao amanhecer. Veja como foi a edição 2025.</p>
+      <p>Do briefing à premiação — 125,8 km caminhando e voando. Cada quadro, um momento da edição 2025.</p>
     </div>
-    <div class="video-wrap">
-      <div class="video-poster"
-           data-video="https://www.youtube.com/embed/videoseries?list=UU"
-           style="background-image: url('assets/img/hero-paraglider.jpg'); background-position: center 30%">
-        <button class="play-btn" aria-label="Tocar vídeo"></button>
+    <div class="carousel" data-autoplay="4500" aria-roledescription="carrossel">
+      <div class="carousel__track">
+        <div class="carousel__slide is-active"><img src="assets/img/fotos-2025/briefing/foto-2.jpg" alt="Briefing técnico" loading="eager" /></div>
+        <div class="carousel__slide"><img src="assets/img/fotos-2025/largada/foto-1.jpg" alt="Pórtico oficial da largada" loading="lazy" /></div>
+        <div class="carousel__slide"><img src="assets/img/fotos-2025/largada/foto-5.jpg" alt="Equipe na largada" loading="lazy" /></div>
+        <div class="carousel__slide"><img src="assets/img/fotos-2025/rampa/foto-1.jpg" alt="Atleta na travessia" loading="lazy" /></div>
+        <div class="carousel__slide"><img src="assets/img/fotos-2025/rampa/foto-7.jpg" alt="Cachorro no veículo de apoio" loading="lazy" /></div>
+        <div class="carousel__slide"><img src="assets/img/fotos-2025/voos/foto-1.jpg" alt="Parapente nas montanhas" loading="lazy" /></div>
+        <div class="carousel__slide"><img src="assets/img/fotos-2025/voos/foto-6.jpg" alt="Voo no Filetti" loading="lazy" /></div>
+        <div class="carousel__slide"><img src="assets/img/fotos-2025/voos/foto-10.jpg" alt="Voo sobre Forno Grande" loading="lazy" /></div>
+        <div class="carousel__slide"><img src="assets/img/fotos-2025/chegada/foto-2.jpg" alt="Chegada na cidade" loading="lazy" /></div>
+        <div class="carousel__slide"><img src="assets/img/fotos-2025/chegada/foto-7.jpg" alt="Atletas finalizando" loading="lazy" /></div>
+        <div class="carousel__slide"><img src="assets/img/fotos-2025/premiacao/foto-3.jpg" alt="Troféu da competição" loading="lazy" /></div>
+        <div class="carousel__slide"><img src="assets/img/fotos-2025/premiacao/foto-7.jpg" alt="Cerimônia de premiação" loading="lazy" /></div>
+      </div>
+      <button class="carousel__btn carousel__btn--prev" aria-label="Slide anterior">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <button class="carousel__btn carousel__btn--next" aria-label="Próximo slide">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+      </button>
+      <div class="carousel__dots" role="tablist">
+        <button class="carousel__dot is-active" aria-label="Foto 1"></button>
+        <button class="carousel__dot" aria-label="Foto 2"></button>
+        <button class="carousel__dot" aria-label="Foto 3"></button>
+        <button class="carousel__dot" aria-label="Foto 4"></button>
+        <button class="carousel__dot" aria-label="Foto 5"></button>
+        <button class="carousel__dot" aria-label="Foto 6"></button>
+        <button class="carousel__dot" aria-label="Foto 7"></button>
+        <button class="carousel__dot" aria-label="Foto 8"></button>
+        <button class="carousel__dot" aria-label="Foto 9"></button>
+        <button class="carousel__dot" aria-label="Foto 10"></button>
+        <button class="carousel__dot" aria-label="Foto 11"></button>
+        <button class="carousel__dot" aria-label="Foto 12"></button>
       </div>
     </div>
-    <p style="margin-top:24px; text-align:center"><a href="https://www.youtube.com/@TranscapixabaHikeandFly" target="_blank" class="btn btn--ghost">Ver mais vídeos no YouTube</a></p>
+    <p style="margin-top:24px; text-align:center">
+      <a href="fotos-2025.html" class="btn btn--ghost">Ver galeria completa →</a>
+    </p>
   </div>
 </section>
 
@@ -265,47 +297,30 @@
   <div class="container">
     <div class="section__header">
       <div class="eyebrow">PERCURSO 2026</div>
-      <h2>Da serra ao mar</h2>
-      <p>Cinco dias, cinco turnpoints estratégicos. O traçado de 2026 leva o piloto pelas montanhas centrais do Espírito Santo até a costa.</p>
+      <h2>Travessia do norte ao sul</h2>
+      <p>De Vila Pereira (Nanuque/MG) a Bom Jesus do Itabapoana (RJ), cruzando o Espírito Santo. Doze turnpoints. Cinco dias de janela.</p>
     </div>
     <div class="map-wrap">
-      <svg class="map-svg" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <linearGradient id="map-bg" x1="0" x2="0" y1="0" y2="1">
-            <stop offset="0" stop-color="#0f1d2a"/><stop offset="1" stop-color="#162a3a"/>
-          </linearGradient>
-          <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-            <path d="M40 0 L0 0 0 40" fill="none" stroke="#1f3349" stroke-width=".5"/>
-          </pattern>
-        </defs>
-        <rect width="1200" height="600" fill="url(#map-bg)"/>
-        <rect width="1200" height="600" fill="url(#grid)"/>
-        <!-- ES state silhouette stylized -->
-        <path d="M740 60 L820 50 L900 80 L960 130 L1010 180 L1050 240 L1080 310 L1080 380 L1060 450 L1020 510 L960 550 L880 560 L820 540 L780 510 L750 470 L720 430 L700 380 L680 320 L670 260 L680 200 L700 140 Z" fill="#1a3145" stroke="#2c4d6b" stroke-width="2"/>
-        <!-- route line -->
-        <path d="M260 200 Q360 240 460 280 T660 360 T880 460" fill="none" stroke="#ffd400" stroke-width="4" stroke-dasharray="2 8" stroke-linecap="round"/>
-        <!-- checkpoints -->
-        <g font-family="Anton" font-size="14" fill="#fff">
-          <g><circle cx="260" cy="200" r="14" fill="#ff5a1f" stroke="#fff" stroke-width="2"/><text x="260" y="205" text-anchor="middle" font-size="13">S</text><text x="260" y="178" text-anchor="middle" fill="#ffd400">LARGADA</text><text x="260" y="232" text-anchor="middle" font-size="11" fill="#bbb">Venda Nova do Imigrante</text></g>
-          <g><circle cx="430" cy="270" r="10" fill="#0f1d2a" stroke="#ffd400" stroke-width="2"/><text x="430" y="250" text-anchor="middle">CP1</text><text x="430" y="296" text-anchor="middle" font-size="11" fill="#bbb">Pedra Azul</text></g>
-          <g><circle cx="600" cy="340" r="10" fill="#0f1d2a" stroke="#ffd400" stroke-width="2"/><text x="600" y="320" text-anchor="middle">CP2</text><text x="600" y="366" text-anchor="middle" font-size="11" fill="#bbb">Castelo</text></g>
-          <g><circle cx="760" cy="410" r="10" fill="#0f1d2a" stroke="#ffd400" stroke-width="2"/><text x="760" y="390" text-anchor="middle">CP3</text><text x="760" y="436" text-anchor="middle" font-size="11" fill="#bbb">Cachoeiro</text></g>
-          <g><circle cx="880" cy="460" r="14" fill="#2bb673" stroke="#fff" stroke-width="2"/><text x="880" y="465" text-anchor="middle" font-size="13">F</text><text x="880" y="438" text-anchor="middle" fill="#2bb673">CHEGADA</text><text x="880" y="492" text-anchor="middle" font-size="11" fill="#bbb">Ponte de Itapaboana</text></g>
-        </g>
-        <!-- compass -->
-        <g transform="translate(80 480)" stroke="#fff" stroke-width="1.5" fill="none">
-          <circle r="30"/>
-          <path d="M0 -28 L8 0 L0 28 L-8 0 Z" fill="#ffd400" stroke="#ffd400"/>
-          <text x="0" y="-36" text-anchor="middle" font-family="Anton" font-size="14" fill="#fff" stroke="none">N</text>
-        </g>
-      </svg>
+      <div id="route-map" style="width:100%; height:620px; background:#061f3f"></div>
     </div>
+    <p style="margin-top:12px; color: var(--c-muted); font-size: .9rem">
+      Mapa interativo · Clique em um marcador ou cilindro para detalhes. <a href="rota.html">Ver página completa da rota →</a>
+    </p>
     <div class="checkpoints">
-      <div class="cp"><div class="cp__num">01</div><div class="cp__name">Venda Nova do Imigrante</div><div class="cp__meta">Largada · 700 m</div></div>
-      <div class="cp"><div class="cp__num">02</div><div class="cp__name">Pedra Azul</div><div class="cp__meta">Turnpoint · 1.300 m</div></div>
-      <div class="cp"><div class="cp__num">03</div><div class="cp__name">Castelo</div><div class="cp__meta">Turnpoint · 900 m</div></div>
-      <div class="cp"><div class="cp__num">04</div><div class="cp__name">Cachoeiro de Itapemirim</div><div class="cp__meta">Turnpoint · 90 m</div></div>
-      <div class="cp"><div class="cp__num">05</div><div class="cp__name">Ponte de Itapaboana</div><div class="cp__meta">Chegada · 20 m</div></div>
+      <div class="cp"><div class="cp__num">01</div><div class="cp__name">Vila Pereira</div><div class="cp__meta">Largada · Nanuque/MG</div></div>
+      <div class="cp"><div class="cp__num">02</div><div class="cp__name">Adilson da Pedra</div><div class="cp__meta">TP1 · Placa</div></div>
+      <div class="cp"><div class="cp__num">03</div><div class="cp__name">Pedra da Viúva</div><div class="cp__meta">TP2 · Cilindro 1,5 km</div></div>
+      <div class="cp"><div class="cp__num">04</div><div class="cp__name">Cachoeira do Denzol</div><div class="cp__meta">TP3 · Cilindro 3,5 km</div></div>
+      <div class="cp"><div class="cp__num">05</div><div class="cp__name">Três Pontões de Águia Branca</div><div class="cp__meta">TP4 · Cilindro 7 km</div></div>
+      <div class="cp"><div class="cp__num">06</div><div class="cp__name">Pouso Oficial de Pancas</div><div class="cp__meta">TP5 · Placa</div></div>
+      <div class="cp"><div class="cp__num">07</div><div class="cp__name">Rampa Pedra da Colina</div><div class="cp__meta">TP6 · Placa</div></div>
+      <div class="cp"><div class="cp__num">08</div><div class="cp__name">Rampa do Monjolo</div><div class="cp__meta">TP7 · Placa</div></div>
+      <div class="cp"><div class="cp__num">09</div><div class="cp__name">Cinco Pontões</div><div class="cp__meta">TP8 · Placa / Self</div></div>
+      <div class="cp"><div class="cp__num">10</div><div class="cp__name">Três Pontões de Afonso Cláudio</div><div class="cp__meta">TP9 · Cilindro 3 km</div></div>
+      <div class="cp"><div class="cp__num">11</div><div class="cp__name">Forno Grande</div><div class="cp__meta">TP10 · Placa</div></div>
+      <div class="cp"><div class="cp__num">12</div><div class="cp__name">Fazenda da Mata</div><div class="cp__meta">TP11 · Placa</div></div>
+      <div class="cp"><div class="cp__num">13</div><div class="cp__name">Pontões de Mimoso do Sul</div><div class="cp__meta">TP12 · Cilindro 3,5 km</div></div>
+      <div class="cp"><div class="cp__num">14</div><div class="cp__name">Bom Jesus do Itabapoana</div><div class="cp__meta">Chegada · RJ</div></div>
     </div>
   </div>
 </section>
@@ -319,11 +334,11 @@
       <p>Decolagens, térmicas, pouso na grama, equipes em ação. Um pedaço da Transcapixaba em cada quadro.</p>
     </div>
     <div class="gallery">
-      <a class="g-1" href="galeria.html" style="background-image:url('https://images.unsplash.com/photo-1531259683007-016a7b628fc3?auto=format&fit=crop&w=1200&q=80')" aria-label="Parapente em voo"></a>
-      <a class="g-2" href="galeria.html" style="background-image:url('https://images.unsplash.com/photo-1517462964-21fdcec3f25b?auto=format&fit=crop&w=800&q=80')" aria-label="Decolagem"></a>
-      <a class="g-3" href="galeria.html" style="background-image:url('https://images.unsplash.com/photo-1486183909-86b0fa1ff8e2?auto=format&fit=crop&w=800&q=80')" aria-label="Montanhas"></a>
-      <a class="g-4" href="galeria.html" style="background-image:url('https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&w=800&q=80')" aria-label="Voo livre"></a>
-      <a class="g-5" href="galeria.html" style="background-image:url('https://images.unsplash.com/photo-1543133561-ff7f7eda01f3?auto=format&fit=crop&w=800&q=80')" aria-label="Parapente"></a>
+      <a class="g-1" href="fotos-2025.html" style="background-image:url('assets/img/fotos-2025/rampa/foto-13.jpg')" aria-label="Atleta na travessia"></a>
+      <a class="g-2" href="fotos-2025.html" style="background-image:url('assets/img/fotos-2025/largada/foto-13.jpg')" aria-label="Pórtico da largada"></a>
+      <a class="g-3" href="fotos-2025.html" style="background-image:url('assets/img/fotos-2025/briefing/foto-13.jpg')" aria-label="Briefing pré-prova"></a>
+      <a class="g-4" href="fotos-2025.html" style="background-image:url('assets/img/fotos-2025/chegada/foto-13.jpg')" aria-label="Chegada na cidade"></a>
+      <a class="g-5" href="fotos-2025.html" style="background-image:url('assets/img/fotos-2025/premiacao/foto-13.jpg')" aria-label="Cerimônia de premiação"></a>
     </div>
   </div>
 </section>
@@ -333,15 +348,29 @@
   <div class="container">
     <div class="section__header">
       <div class="eyebrow">QUEM APOIA</div>
-      <h2>Parceiros e patrocinadores</h2>
+      <h2>Patrocinadores</h2>
+    </div>
+    <div class="sponsors sponsors--featured">
+      <div class="sponsor"><img src="assets/img/sponsors/governo-es.png" alt="Governo do Estado do Espírito Santo" loading="lazy" /></div>
+      <div class="sponsor"><img src="assets/img/sponsors/jomi.png" alt="Jomi" loading="lazy" /></div>
+      <div class="sponsor"><img src="assets/img/sponsors/peak-co.webp" alt="Peak Co." loading="lazy" /></div>
+      <div class="sponsor"><img src="assets/img/sponsors/liquidz.webp" alt="Liquidz" loading="lazy" /></div>
+    </div>
+
+    <div class="section__header" style="margin-top: 70px">
+      <div class="eyebrow">PARCEIROS</div>
+      <h2>Apoiadores</h2>
     </div>
     <div class="sponsors">
-      <div class="sponsor">CBVL — Confederação Brasileira de Voo Livre</div>
-      <div class="sponsor">FAI — Fédération Aéronautique Internationale</div>
-      <div class="sponsor">Governo do Espírito Santo</div>
-      <div class="sponsor">Prefeitura de Venda Nova</div>
-      <div class="sponsor">Casa do Strudel</div>
-      <div class="sponsor">Ozone Paragliders</div>
+      <div class="sponsor"><img src="assets/img/supporters/cbvl.png" alt="Confederação Brasileira de Voo Livre" loading="lazy" /></div>
+      <div class="sponsor"><img src="assets/img/supporters/fcvl.png" alt="Federação Capixaba de Voo Livre" loading="lazy" /></div>
+      <div class="sponsor"><img src="assets/img/supporters/governos.png" alt="Secretaria de Esportes e Lazer do Espírito Santo" loading="lazy" /></div>
+      <div class="sponsor"><img src="assets/img/supporters/venda-nova.png" alt="Prefeitura de Venda Nova do Imigrante" loading="lazy" /></div>
+      <div class="sponsor"><img src="assets/img/supporters/alegre.png" alt="Prefeitura de Alegre" loading="lazy" /></div>
+      <div class="sponsor"><img src="assets/img/supporters/alta.png" alt="Alta Montanha" loading="lazy" /></div>
+      <div class="sponsor"><img src="assets/img/supporters/ibex.png" alt="Ibex" loading="lazy" /></div>
+      <div class="sponsor"><img src="assets/img/supporters/tabatinga.png" alt="Tabatinga" loading="lazy" /></div>
+      <div class="sponsor"><img src="assets/img/supporters/ranking.png" alt="Ranking Gestão de Frotas" loading="lazy" /></div>
     </div>
   </div>
 </section>
@@ -405,5 +434,7 @@
 </footer>
 
 <script src="assets/js/main.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="assets/js/route-map.js"></script>
 </body>
 </html>

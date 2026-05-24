@@ -205,60 +205,6 @@
   </div>
 </section>
 
-<section>
-  <div class="container">
-    <div class="section__header">
-      <div class="eyebrow"><span class="live-banner"><span class="live-dot"></span>LIVE TRACKING</span></div>
-      <h2>Como acompanhar a próxima edição</h2>
-      <p>Durante a edição 2026, esta página exibe o mapa de rastreamento ao vivo dos atletas. Abaixo, um preview de como funciona.</p>
-    </div>
-    <div style="display:grid; grid-template-columns: 2fr 1fr; gap: 30px;" id="live-grid">
-      <div class="map-wrap">
-        <svg class="map-svg" viewBox="0 0 1000 600" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="lmap" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#0f1d2a"/><stop offset="1" stop-color="#162a3a"/></linearGradient>
-            <pattern id="lgrid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0 L0 0 0 40" fill="none" stroke="#1f3349" stroke-width=".5"/></pattern>
-          </defs>
-          <rect width="1000" height="600" fill="url(#lmap)"/>
-          <rect width="1000" height="600" fill="url(#lgrid)"/>
-          <path d="M120 200 Q260 250 400 320 T700 460 T900 520" fill="none" stroke="#ffd400" stroke-width="3" stroke-dasharray="2 8" opacity=".6"/>
-          <g fill="#0f1d2a" stroke="#ffd400" stroke-width="2">
-            <circle cx="120" cy="200" r="10"/><circle cx="320" cy="280" r="10"/><circle cx="520" cy="370" r="10"/><circle cx="700" cy="460" r="10"/><circle cx="900" cy="520" r="10"/>
-          </g>
-          <g>
-            <circle cx="380" cy="305" r="9" fill="#ffd400" stroke="#fff" stroke-width="2"><animate attributeName="r" values="9;13;9" dur="1.4s" repeatCount="indefinite"/></circle>
-            <text x="395" y="310" font-family="Anton" fill="#ffd400" font-size="14">#227 BOETTCHER</text>
-            <circle cx="350" cy="295" r="8" fill="#ff5a1f" stroke="#fff" stroke-width="2"><animate attributeName="r" values="8;12;8" dur="1.4s" repeatCount="indefinite"/></circle>
-            <text x="365" y="288" font-family="Anton" fill="#ff5a1f" font-size="13">#220 HODGSON</text>
-            <circle cx="310" cy="282" r="8" fill="#2bb673" stroke="#fff" stroke-width="2"><animate attributeName="r" values="8;12;8" dur="1.4s" repeatCount="indefinite"/></circle>
-            <text x="220" y="276" font-family="Anton" fill="#2bb673" font-size="13">#228 KAYNA</text>
-            <circle cx="260" cy="260" r="7" fill="#1a8fe3" stroke="#fff" stroke-width="2"/>
-            <circle cx="200" cy="235" r="7" fill="#1a8fe3" stroke="#fff" stroke-width="2"/>
-            <circle cx="160" cy="215" r="7" fill="#1a8fe3" stroke="#fff" stroke-width="2"/>
-          </g>
-          <g transform="translate(40 40)">
-            <rect width="220" height="80" fill="#0a0a0a" stroke="#ffd400" rx="4"/>
-            <text x="14" y="26" font-family="Anton" font-size="14" fill="#ffd400">LIVE · DEMO</text>
-            <text x="14" y="48" font-family="Inter" font-size="12" fill="#fff">Preview do painel ao vivo</text>
-            <text x="14" y="66" font-family="Inter" font-size="12" fill="#aaa">Disponível durante a prova</text>
-          </g>
-        </svg>
-      </div>
-      <aside>
-        <h3 style="font-size:1.4rem; margin-bottom:14px">Top 5 ao vivo</h3>
-        <div class="leaderboard-mini">
-          <div class="row"><div class="pos">1</div><div><div class="nm">John Boettcher</div><div class="tm">#227 · BRA</div></div><div class="dist">88 km</div><div style="color:#2bb673; font-size:.8rem">▲ no ar</div></div>
-          <div class="row"><div class="pos">2</div><div><div class="nm">Ben Hodgson</div><div class="tm">#220 · GBR</div></div><div class="dist">85 km</div><div style="color:#2bb673; font-size:.8rem">▲ no ar</div></div>
-          <div class="row"><div class="pos">3</div><div><div class="nm">Kayna Moreira</div><div class="tm">#228 · BRA</div></div><div class="dist">82 km</div><div style="color:#ff5a1f; font-size:.8rem">⬢ trilha</div></div>
-          <div class="row"><div class="pos">4</div><div><div class="nm">Raphael Laghi</div><div class="tm">#237 · BRA</div></div><div class="dist">79 km</div><div style="color:#ff5a1f; font-size:.8rem">⬢ trilha</div></div>
-          <div class="row"><div class="pos">5</div><div><div class="nm">Rafael Saladini</div><div class="tm">#235 · BRA</div></div><div class="dist">77 km</div><div style="color: var(--c-muted); font-size:.8rem">◼ pausa</div></div>
-        </div>
-        <p style="color: var(--c-muted); margin-top:18px; font-size:.85rem">Durante a prova, este painel é alimentado pelos rastreadores Garmin/SPOT em tempo real.</p>
-      </aside>
-    </div>
-  </div>
-</section>
-
 <footer class="footer">
   <div class="container">
     <div class="footer__grid">
