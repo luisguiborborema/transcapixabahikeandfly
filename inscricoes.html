@@ -70,38 +70,30 @@
   <div class="container">
     <div class="eyebrow">EDIÇÃO 2026 · INSCRIÇÕES ABERTAS</div>
     <h1>Inscreva-se</h1>
-    <p style="max-width:680px; font-size:1.1rem; color: rgba(255,255,255,.85)">30 vagas. Cinco dias. Uma travessia. Preencha o formulário e nossa equipe entra em contato em até 48 horas com os próximos passos.</p>
+    <p style="max-width:680px; font-size:1.1rem; color: rgba(255,255,255,.85)">30 vagas. Cinco dias. Uma travessia. Preencha o formulário oficial no Google Forms e nossa equipe entra em contato em até 48 horas com os próximos passos.</p>
   </div>
 </section>
 
 <section>
   <div class="container">
     <div style="display:grid; grid-template-columns: 1.2fr 1fr; gap: 60px; align-items:start" id="insc-grid">
-      <form class="form" onsubmit="event.preventDefault(); alert('Inscrição enviada! Entraremos em contato em até 48h.')">
-        <div>
-          <label for="nome">Nome completo</label>
-          <input id="nome" type="text" required />
+      <div>
+        <div style="background:var(--c-surface); border:1px solid var(--c-border); padding:40px; border-radius: var(--radius-lg)">
+          <div class="eyebrow">FORMULÁRIO OFICIAL</div>
+          <h2 style="margin: 10px 0 16px">Faça sua inscrição</h2>
+          <p style="color: var(--c-muted); margin: 0 0 28px; line-height: 1.6">
+            O formulário é hospedado no Google Forms. Tenha em mãos seus dados de piloto (CIVL ID, modelo e categoria da vela, horas de voo em montanha) e uma breve descrição da sua experiência.
+          </p>
+          <a href="https://docs.google.com/forms/d/1ajIK08884jp6DwTdxZ-MjCAKnf7eXDfMRlZ-z6rLr7w/viewform?edit_requested=true"
+             target="_blank" rel="noopener"
+             class="btn btn--primary" style="display:inline-flex; align-items:center; gap:10px">
+            Abrir formulário no Google Forms →
+          </a>
+          <p style="color: var(--c-muted); font-size:.85rem; margin: 24px 0 0">
+            Após análise do currículo, a organização confirma a vaga e envia instruções de pagamento.
+          </p>
         </div>
-        <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 18px">
-          <div><label for="email">E-mail</label><input id="email" type="email" required /></div>
-          <div><label for="tel">WhatsApp</label><input id="tel" type="tel" required /></div>
-        </div>
-        <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 18px">
-          <div><label for="pais">País</label><input id="pais" type="text" placeholder="Brasil" /></div>
-          <div><label for="civl">CIVL ID</label><input id="civl" type="text" placeholder="Ex: 45673" /></div>
-        </div>
-        <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 18px">
-          <div><label for="vela">Modelo de vela</label><input id="vela" type="text" placeholder="Ozone Zeolite GT" /></div>
-          <div><label for="cat">Categoria EN</label>
-            <select id="cat"><option>EN-A</option><option>EN-B</option><option>EN-C</option><option selected>EN-D</option><option>CCC</option></select>
-          </div>
-        </div>
-        <div><label for="horas">Horas de voo livre em montanha</label><input id="horas" type="number" min="0" placeholder="Mínimo 100h" /></div>
-        <div><label for="bio">Por que você quer fazer a Transcapixaba?</label><textarea id="bio" placeholder="Conte um pouco da sua trajetória"></textarea></div>
-        <div><label><input type="checkbox" required style="width:auto; margin-right:8px"/>Li e aceito o regulamento</label></div>
-        <button class="btn btn--primary" type="submit">Enviar inscrição →</button>
-        <p style="color: var(--c-muted); font-size:.85rem; margin:0">Após análise do currículo, a organização confirma a vaga e envia instruções de pagamento.</p>
-      </form>
+      </div>
 
       <aside style="position:sticky; top: calc(var(--nav-h) + 20px)">
         <div style="background:var(--c-surface); border:1px solid var(--c-border); padding:30px; border-radius: var(--radius-lg)">

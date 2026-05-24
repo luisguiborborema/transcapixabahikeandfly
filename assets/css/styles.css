@@ -689,6 +689,14 @@ section { padding: 100px 0; }
   width: 70px;
 }
 .results tr:hover td { background: rgba(13,104,200,.06); }
+.results--wide { font-size: .82rem; min-width: 1200px; }
+.results--wide th, .results--wide td { padding: 10px 12px; }
+.results--wide td.rank { font-size: 1.15rem; width: 50px; }
+.results--wide th:nth-child(9), .results--wide td:nth-child(9),
+.results--wide th:nth-child(10), .results--wide td:nth-child(10),
+.results--wide th:nth-child(11), .results--wide td:nth-child(11),
+.results--wide th:nth-child(12), .results--wide td:nth-child(12) { white-space: nowrap; }
+.results--wide th:nth-child(7), .results--wide td:nth-child(7) { max-width: 280px; }
 
 /* ---------- FOOTER ---------- */
 .footer {
