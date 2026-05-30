@@ -324,11 +324,12 @@ p { margin: 0 0 1em; color: #34465e; }
   border-radius: var(--radius);
 }
 .hero__title {
-  font-size: clamp(2.5rem, 8vw, 8rem);
-  line-height: .85;
+  font-size: clamp(2rem, 7vw, 5.5rem);
+  line-height: .9;
   margin-bottom: 16px;
   color: #fff;
   text-shadow: 0 6px 30px rgba(0,0,0,.4);
+  white-space: nowrap;
 }
 .hero__title span { display: block; color: var(--c-accent); }
 .hero__sub {
@@ -1220,7 +1221,7 @@ section { padding: 100px 0; }
   .play-btn { width: 72px; height: 72px; }
 
   /* Hero ainda mais compacto */
-  .hero__title { font-size: clamp(2.2rem, 11vw, 3.4rem); }
+  .hero__title { font-size: clamp(1.8rem, 9vw, 3rem); }
   .hero__stats { gap: 18px; }
   .hero__stats > div { flex: 1 1 calc(50% - 9px); min-width: 0; }
 
@@ -1240,7 +1241,7 @@ section { padding: 100px 0; }
 }
 @media (max-width: 380px) {
   /* Telas muito pequenas */
-  .hero__title { font-size: 2rem; }
+  .hero__title { font-size: 1.7rem; }
   .hero__date { font-size: .85rem; padding: 5px 11px; }
   #route-map { height: 320px !important; }
   .sponsors, .sponsors--featured { grid-template-columns: 1fr; }
