@@ -137,15 +137,12 @@ p { margin: 0 0 1em; color: #34465e; }
   border-bottom-color: transparent;
 }
 .nav--transparent .nav__links a { color: #fff; }
-.nav .nav__logo svg g { fill: var(--c-text); }
-.nav .nav__logo svg g line { stroke: var(--c-text); }
 .nav.is-scrolled {
   background: rgba(255,255,255,0.95);
   border-bottom-color: var(--c-border);
   box-shadow: 0 2px 18px rgba(8,55,110,.08);
 }
 .nav.is-scrolled .nav__links a { color: var(--c-text); }
-.nav.is-scrolled .nav__logo .logo-fill-text { fill: var(--c-text) !important; }
 .nav__inner {
   width: 100%;
   max-width: var(--max-w);
