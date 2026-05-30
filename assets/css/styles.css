@@ -137,6 +137,36 @@ p { margin: 0 0 1em; color: #34465e; }
   border-bottom-color: transparent;
 }
 .nav--transparent .nav__links a { color: #fff; }
+.lang-switch {
+  display: inline-flex;
+  gap: 4px;
+  margin-right: 14px;
+  align-items: center;
+}
+.lang-switch button {
+  background: transparent;
+  border: 1px solid currentColor;
+  color: inherit;
+  padding: 4px 10px;
+  font-family: var(--f-display);
+  font-size: .78rem;
+  letter-spacing: .08em;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background .2s, color .2s, border-color .2s;
+}
+.lang-switch button:hover { opacity: .8; }
+.lang-switch button.is-active {
+  background: var(--c-accent);
+  color: var(--c-blue-deep);
+  border-color: var(--c-accent);
+}
+.nav--transparent .lang-switch button { color: #fff; border-color: rgba(255,255,255,.6); }
+.nav--transparent .lang-switch button.is-active { color: var(--c-blue-deep); border-color: var(--c-accent); }
+@media (max-width: 900px) {
+  .lang-switch { order: 2; margin-right: 8px; }
+  .lang-switch button { padding: 3px 7px; font-size: .7rem; }
+}
 .nav.is-scrolled {
   background: rgba(255,255,255,0.95);
   border-bottom-color: var(--c-border);

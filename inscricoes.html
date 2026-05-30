@@ -12,6 +12,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="assets/css/styles.css" />
+  <script src="assets/js/i18n.js" defer></script>
 </head>
 <body>
 <header class="nav">
@@ -22,34 +23,38 @@
     <nav>
       <ul class="nav__links">
         <li class="nav__item--has-drop">
-          <a href="competicao.html">A Competição</a>
+          <a href="competicao.html" data-i18n="nav.competicao">A Competição</a>
           <ul class="nav__drop">
-            <li><a href="faq.html">Perguntas Frequentes</a></li>
+            <li><a href="faq.html" data-i18n="nav.faq">Perguntas Frequentes</a></li>
           </ul>
         </li>
-        <li><a href="rota.html">Rota 2026</a></li>
-        <li><a href="regulamento.html">Regulamento</a></li>
+        <li><a href="rota.html" data-i18n="nav.rota">Rota 2026</a></li>
+        <li><a href="regulamento.html" data-i18n="nav.regulamento">Regulamento</a></li>
         <li class="nav__item--has-drop">
-          <a href="galeria.html">Galeria</a>
+          <a href="galeria.html" data-i18n="nav.galeria">Galeria</a>
           <ul class="nav__drop">
-            <li><a href="fotos-2023.html">Fotos 2023</a></li>
-            <li><a href="fotos-2024.html">Fotos 2024</a></li>
-            <li><a href="fotos-2025.html">Fotos 2025</a></li>
+            <li><a href="fotos-2023.html" data-i18n="nav.fotos2023">Fotos 2023</a></li>
+            <li><a href="fotos-2024.html" data-i18n="nav.fotos2024">Fotos 2024</a></li>
+            <li><a href="fotos-2025.html" data-i18n="nav.fotos2025">Fotos 2025</a></li>
           </ul>
         </li>
-        <li><a href="inscricoes.html">Aplicações</a></li>
+        <li><a href="inscricoes.html" data-i18n="nav.aplicacoes">Aplicações</a></li>
         <li class="nav__item--has-drop">
-          <a href="resultados-2025.html">Resultados</a>
+          <a href="resultados-2025.html" data-i18n="nav.resultados">Resultados</a>
           <ul class="nav__drop">
-            <li><a href="resultados-2023.html">Resultados 2023</a></li>
-            <li><a href="resultados-2024.html">Resultados 2024</a></li>
-            <li><a href="resultados-2025.html">Resultados 2025</a></li>
+            <li><a href="resultados-2023.html" data-i18n="nav.resultados2023">Resultados 2023</a></li>
+            <li><a href="resultados-2024.html" data-i18n="nav.resultados2024">Resultados 2024</a></li>
+            <li><a href="resultados-2025.html" data-i18n="nav.resultados2025">Resultados 2025</a></li>
           </ul>
         </li>
       </ul>
     </nav>
-    <a href="inscricoes.html" class="nav__cta">Inscrições</a>
-    <button class="nav__burger" aria-label="Abrir menu">
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button type="button" data-lang="pt">PT</button>
+      <button type="button" data-lang="en">EN</button>
+    </div>
+    <a href="inscricoes.html" class="nav__cta" data-i18n="nav.inscricoes">Inscrições</a>
+    <button class="nav__burger" aria-label="Abrir menu" data-i18n-attr="aria-label:nav.openMenu">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
     </button>
   </div>
@@ -57,9 +62,9 @@
 
 <section class="page-head">
   <div class="container">
-    <div class="eyebrow">EDIÇÃO 2026 · INSCRIÇÕES ABERTAS</div>
-    <h1>Inscreva-se</h1>
-    <p style="max-width:680px; font-size:1.1rem; color: rgba(255,255,255,.85)">30 vagas. Cinco dias. Uma travessia. Preencha o formulário oficial no Google Forms e nossa equipe entra em contato em até 48 horas com os próximos passos.</p>
+    <div class="eyebrow" data-i18n="insc.head.eyebrow">EDIÇÃO 2026 · INSCRIÇÕES ABERTAS</div>
+    <h1 data-i18n="insc.head.title">Inscreva-se</h1>
+    <p style="max-width:680px; font-size:1.1rem; color: rgba(255,255,255,.85)" data-i18n="insc.head.sub">30 vagas. Cinco dias. Uma travessia. Preencha o formulário oficial no Google Forms e nossa equipe entra em contato em até 48 horas com os próximos passos.</p>
   </div>
 </section>
 
@@ -68,17 +73,17 @@
     <div style="display:grid; grid-template-columns: 1.2fr 1fr; gap: 60px; align-items:start" id="insc-grid">
       <div>
         <div style="background:var(--c-surface); border:1px solid var(--c-border); padding:40px; border-radius: var(--radius-lg)">
-          <div class="eyebrow">FORMULÁRIO OFICIAL</div>
-          <h2 style="margin: 10px 0 16px">Faça sua inscrição</h2>
-          <p style="color: var(--c-muted); margin: 0 0 28px; line-height: 1.6">
+          <div class="eyebrow" data-i18n="insc.form.eyebrow">FORMULÁRIO OFICIAL</div>
+          <h2 style="margin: 10px 0 16px" data-i18n="insc.form.title">Faça sua inscrição</h2>
+          <p style="color: var(--c-muted); margin: 0 0 28px; line-height: 1.6" data-i18n="insc.form.desc">
             O formulário é hospedado no Google Forms. Tenha em mãos seus dados de piloto (CIVL ID, modelo e categoria da vela, horas de voo em montanha) e uma breve descrição da sua experiência.
           </p>
           <a href="https://docs.google.com/forms/d/1ajIK08884jp6DwTdxZ-MjCAKnf7eXDfMRlZ-z6rLr7w/viewform?edit_requested=true"
              target="_blank" rel="noopener"
              class="btn btn--primary" style="display:inline-flex; align-items:center; gap:10px">
-            Abrir formulário no Google Forms →
+            <span data-i18n="insc.form.cta">Abrir formulário no Google Forms →</span>
           </a>
-          <p style="color: var(--c-muted); font-size:.85rem; margin: 24px 0 0">
+          <p style="color: var(--c-muted); font-size:.85rem; margin: 24px 0 0" data-i18n="insc.form.note">
             Após análise do currículo, a organização confirma a vaga e envia instruções de pagamento.
           </p>
         </div>
@@ -86,19 +91,19 @@
 
       <aside style="position:sticky; top: calc(var(--nav-h) + 20px)">
         <div style="background:var(--c-surface); border:1px solid var(--c-border); padding:30px; border-radius: var(--radius-lg)">
-          <div class="eyebrow">O QUE ESTÁ INCLUSO</div>
+          <div class="eyebrow" data-i18n="insc.incluso.eyebrow">O QUE ESTÁ INCLUSO</div>
           <ul style="list-style:none; padding:0; margin:0">
-            <li style="padding:10px 0; border-bottom:1px solid var(--c-border)">Rastreador GPS oficial</li>
-            <li style="padding:10px 0; border-bottom:1px solid var(--c-border)">Kit do atleta (camisa, mochila)</li>
-            <li style="padding:10px 0; border-bottom:1px solid var(--c-border)">Hospedagem pré e pós-prova</li>
-            <li style="padding:10px 0; border-bottom:1px solid var(--c-border)">Seguro durante a competição</li>
-            <li style="padding:10px 0; border-bottom:1px solid var(--c-border)">Briefing técnico e meteo</li>
-            <li style="padding:10px 0">Cobertura ao vivo e fotos</li>
+            <li style="padding:10px 0; border-bottom:1px solid var(--c-border)" data-i18n="insc.incluso.1">Rastreador GPS oficial</li>
+            <li style="padding:10px 0; border-bottom:1px solid var(--c-border)" data-i18n="insc.incluso.2">Kit do atleta (camisa, mochila)</li>
+            <li style="padding:10px 0; border-bottom:1px solid var(--c-border)" data-i18n="insc.incluso.3">Hospedagem pré e pós-prova</li>
+            <li style="padding:10px 0; border-bottom:1px solid var(--c-border)" data-i18n="insc.incluso.4">Seguro durante a competição</li>
+            <li style="padding:10px 0; border-bottom:1px solid var(--c-border)" data-i18n="insc.incluso.5">Briefing técnico e meteo</li>
+            <li style="padding:10px 0" data-i18n="insc.incluso.6">Cobertura ao vivo e fotos</li>
           </ul>
         </div>
         <div style="margin-top: 24px; background: rgba(255,212,0,.15); border:1px solid #ffd400; padding: 24px; border-radius: var(--radius-lg)">
-          <h3 style="font-family:var(--f-display); font-size:1.4rem; color: var(--c-text); margin:0 0 10px">PRAZO</h3>
-          <p style="margin:0; color: var(--c-text)">Inscrições abertas até <strong>15 de fevereiro de 2026</strong> ou enquanto houver vagas.</p>
+          <h3 style="font-family:var(--f-display); font-size:1.4rem; color: var(--c-text); margin:0 0 10px" data-i18n="insc.prazo.title">PRAZO</h3>
+          <p style="margin:0; color: var(--c-text)" data-i18n="insc.prazo.desc">Inscrições abertas até <strong>15 de fevereiro de 2026</strong> ou enquanto houver vagas.</p>
         </div>
       </aside>
     </div>
@@ -108,12 +113,12 @@
 <section style="background: var(--c-bg-2)">
   <div class="container">
     <div class="section__header" style="text-align:center; margin: 0 auto">
-      <div class="eyebrow">DÚVIDAS?</div>
-      <h2>Fale direto com a organização</h2>
+      <div class="eyebrow" data-i18n="insc.duvidas.eyebrow">DÚVIDAS?</div>
+      <h2 data-i18n="insc.duvidas.title">Fale direto com a organização</h2>
     </div>
     <div style="display:flex; gap:14px; justify-content:center; flex-wrap:wrap">
-      <a href="https://wa.me/5528999910919" class="btn btn--primary">WhatsApp +55 28 99991-0919</a>
-      <a target="_blank" rel="noopener" href="https://www.instagram.com/transcapixabahikeandfly/" class="btn btn--ghost">Direct no Instagram</a>
+      <a href="https://wa.me/5528999910919" class="btn btn--primary" data-i18n="insc.duvidas.wpp">WhatsApp +55 28 99991-0919</a>
+      <a target="_blank" rel="noopener" href="https://www.instagram.com/transcapixabahikeandfly/" class="btn btn--ghost" data-i18n="insc.duvidas.insta">Direct no Instagram</a>
     </div>
   </div>
 </section>
@@ -126,15 +131,15 @@
         <a href="index.html" class="nav__logo" style="margin-bottom:18px; display:inline-flex">
           <img src="img/logo_footer.png" alt="Transcapixaba Hike and Fly" style="height:64px; width:auto" />
         </a>
-        <p style="color: rgba(255,255,255,.75); max-width: 360px">A maior competição de Hike and Fly do Brasil. Inspirada no Red&nbsp;Bull X‑Alps e adaptada às montanhas do Espírito Santo.</p>
+        <p style="color: rgba(255,255,255,.75); max-width: 360px" data-i18n="footer.desc">A maior competição de Hike and Fly do Brasil. Inspirada no Red&nbsp;Bull X‑Alps e adaptada às montanhas do Espírito Santo.</p>
       </div>
-      <div><h4>EVENTO</h4><ul><li><a href="competicao.html">A Competição</a></li><li><a href="rota.html">Rota 2026</a></li><li><a href="galeria.html">Galeria</a></li><li><a href="resultados-2025.html">Resultados</a></li></ul></div>
-      <div><h4>COMPETIDOR</h4><ul><li><a href="inscricoes.html">Inscrições</a></li><li><a href="regulamento.html">Regulamento</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
-      <div><h4>CONTATO</h4><ul><li><a href="https://wa.me/5528999910919">WhatsApp +55 28 99991-0919</a></li><li><a target="_blank" rel="noopener" href="https://www.instagram.com/transcapixabahikeandfly/">Instagram</a></li><li><a target="_blank" rel="noopener" href="https://www.youtube.com/@TranscapixabaHikeandFly">YouTube</a></li></ul></div>
+      <div><h4 data-i18n="footer.evento">EVENTO</h4><ul><li><a href="competicao.html" data-i18n="nav.competicao">A Competição</a></li><li><a href="rota.html" data-i18n="nav.rota">Rota 2026</a></li><li><a href="galeria.html" data-i18n="nav.galeria">Galeria</a></li><li><a href="resultados-2025.html" data-i18n="nav.resultados">Resultados</a></li></ul></div>
+      <div><h4 data-i18n="footer.competidor">COMPETIDOR</h4><ul><li><a href="inscricoes.html" data-i18n="nav.aplicacoes">Inscrições</a></li><li><a href="regulamento.html" data-i18n="nav.regulamento">Regulamento</a></li><li><a href="faq.html" data-i18n="nav.faq">FAQ</a></li></ul></div>
+      <div><h4 data-i18n="footer.contato">CONTATO</h4><ul><li><a href="https://wa.me/5528999910919">WhatsApp +55 28 99991-0919</a></li><li><a target="_blank" rel="noopener" href="https://www.instagram.com/transcapixabahikeandfly/">Instagram</a></li><li><a target="_blank" rel="noopener" href="https://www.youtube.com/@TranscapixabaHikeandFly">YouTube</a></li></ul></div>
     </div>
     <div class="footer__bottom">
-      <span>© 2026 Transcapixaba Hike and Fly. Todos os direitos reservados.</span>
-      <a href="https://wa.me/5527988171917" target="_blank" rel="noopener" style="color:inherit; text-decoration:none">Desenvolvido por Guilherme Borborema</a>
+      <span data-i18n="footer.copyright">© 2026 Transcapixaba Hike and Fly. Todos os direitos reservados.</span>
+      <a href="https://wa.me/5527988171917" target="_blank" rel="noopener" style="color:inherit; text-decoration:none" data-i18n="footer.dev">Desenvolvido por Guilherme Borborema</a>
       <div class="socials">
         <a target="_blank" rel="noopener" href="https://www.instagram.com/transcapixabahikeandfly/"><svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 01-1.38-.9 3.7 3.7 0 01-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.86 5.86 0 00-2.13 1.38A5.86 5.86 0 00.63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.73 1.46 1.38 2.13a5.86 5.86 0 002.13 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.86 5.86 0 002.13-1.38 5.86 5.86 0 001.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.86 5.86 0 00-1.38-2.13A5.86 5.86 0 0019.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 100 12.32 6.16 6.16 0 000-12.32zm0 10.16a4 4 0 110-8 4 4 0 010 8zm6.4-11.84a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z"/></svg></a>
         <a href="https://wa.me/5528999910919"><svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.84 9.84 0 0012.04 2zm4.51 12.15c-.25-.12-1.46-.72-1.69-.8-.23-.08-.4-.12-.56.12-.16.25-.65.8-.8.97-.15.16-.3.18-.55.06-.25-.12-1.04-.38-1.99-1.23-.74-.66-1.23-1.47-1.37-1.72-.14-.25-.02-.39.11-.51.11-.11.25-.3.37-.45.12-.15.16-.25.24-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43-.14-.01-.31-.01-.48-.01a.93.93 0 00-.68.31c-.23.25-.89.87-.89 2.12 0 1.25.91 2.46 1.04 2.63.13.16 1.8 2.74 4.36 3.84.61.26 1.09.42 1.46.54.61.19 1.17.17 1.61.1.49-.07 1.46-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28z"/></svg></a>

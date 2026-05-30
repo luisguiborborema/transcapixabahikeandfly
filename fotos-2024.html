@@ -12,6 +12,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="assets/css/styles.css" />
+  <script src="assets/js/i18n.js" defer></script>
 </head>
 <body>
 <header class="nav">
@@ -22,34 +23,38 @@
     <nav>
       <ul class="nav__links">
         <li class="nav__item--has-drop">
-          <a href="competicao.html">A Competição</a>
+          <a href="competicao.html" data-i18n="nav.competicao">A Competição</a>
           <ul class="nav__drop">
-            <li><a href="faq.html">Perguntas Frequentes</a></li>
+            <li><a href="faq.html" data-i18n="nav.faq">Perguntas Frequentes</a></li>
           </ul>
         </li>
-        <li><a href="rota.html">Rota 2026</a></li>
-        <li><a href="regulamento.html">Regulamento</a></li>
+        <li><a href="rota.html" data-i18n="nav.rota">Rota 2026</a></li>
+        <li><a href="regulamento.html" data-i18n="nav.regulamento">Regulamento</a></li>
         <li class="nav__item--has-drop">
-          <a href="galeria.html">Galeria</a>
+          <a href="galeria.html" data-i18n="nav.galeria">Galeria</a>
           <ul class="nav__drop">
-            <li><a href="fotos-2023.html">Fotos 2023</a></li>
-            <li><a href="fotos-2024.html">Fotos 2024</a></li>
-            <li><a href="fotos-2025.html">Fotos 2025</a></li>
+            <li><a href="fotos-2023.html" data-i18n="nav.fotos2023">Fotos 2023</a></li>
+            <li><a href="fotos-2024.html" data-i18n="nav.fotos2024">Fotos 2024</a></li>
+            <li><a href="fotos-2025.html" data-i18n="nav.fotos2025">Fotos 2025</a></li>
           </ul>
         </li>
-        <li><a href="inscricoes.html">Aplicações</a></li>
+        <li><a href="inscricoes.html" data-i18n="nav.aplicacoes">Aplicações</a></li>
         <li class="nav__item--has-drop">
-          <a href="resultados-2025.html">Resultados</a>
+          <a href="resultados-2025.html" data-i18n="nav.resultados">Resultados</a>
           <ul class="nav__drop">
-            <li><a href="resultados-2023.html">Resultados 2023</a></li>
-            <li><a href="resultados-2024.html">Resultados 2024</a></li>
-            <li><a href="resultados-2025.html">Resultados 2025</a></li>
+            <li><a href="resultados-2023.html" data-i18n="nav.resultados2023">Resultados 2023</a></li>
+            <li><a href="resultados-2024.html" data-i18n="nav.resultados2024">Resultados 2024</a></li>
+            <li><a href="resultados-2025.html" data-i18n="nav.resultados2025">Resultados 2025</a></li>
           </ul>
         </li>
       </ul>
     </nav>
-    <a href="inscricoes.html" class="nav__cta">Inscrições</a>
-    <button class="nav__burger" aria-label="Abrir menu">
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button type="button" data-lang="pt">PT</button>
+      <button type="button" data-lang="en">EN</button>
+    </div>
+    <a href="inscricoes.html" class="nav__cta" data-i18n="nav.inscricoes">Inscrições</a>
+    <button class="nav__burger" aria-label="Abrir menu" data-i18n-attr="aria-label:nav.openMenu">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
     </button>
   </div>
@@ -84,15 +89,15 @@
         <a href="index.html" class="nav__logo" style="margin-bottom:18px; display:inline-flex">
           <img src="img/logo_footer.png" alt="Transcapixaba Hike and Fly" style="height:64px; width:auto" />
         </a>
-        <p style="color: rgba(255,255,255,.75); max-width: 360px">A maior competição de Hike and Fly do Brasil. Inspirada no Red&nbsp;Bull X‑Alps e adaptada às montanhas do Espírito Santo.</p>
+        <p style="color: rgba(255,255,255,.75); max-width: 360px" data-i18n="footer.desc">A maior competição de Hike and Fly do Brasil. Inspirada no Red&nbsp;Bull X‑Alps e adaptada às montanhas do Espírito Santo.</p>
       </div>
-      <div><h4>EVENTO</h4><ul><li><a href="competicao.html">A Competição</a></li><li><a href="rota.html">Rota 2026</a></li><li><a href="galeria.html">Galeria</a></li><li><a href="resultados-2025.html">Resultados</a></li></ul></div>
-      <div><h4>COMPETIDOR</h4><ul><li><a href="inscricoes.html">Inscrições</a></li><li><a href="regulamento.html">Regulamento</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
-      <div><h4>CONTATO</h4><ul><li><a href="https://wa.me/5528999910919">WhatsApp +55 28 99991-0919</a></li><li><a target="_blank" rel="noopener" href="https://www.instagram.com/transcapixabahikeandfly/">Instagram</a></li><li><a target="_blank" rel="noopener" href="https://www.youtube.com/@TranscapixabaHikeandFly">YouTube</a></li></ul></div>
+      <div><h4 data-i18n="footer.evento">EVENTO</h4><ul><li><a href="competicao.html" data-i18n="nav.competicao">A Competição</a></li><li><a href="rota.html" data-i18n="nav.rota">Rota 2026</a></li><li><a href="galeria.html" data-i18n="nav.galeria">Galeria</a></li><li><a href="resultados-2025.html" data-i18n="nav.resultados">Resultados</a></li></ul></div>
+      <div><h4 data-i18n="footer.competidor">COMPETIDOR</h4><ul><li><a href="inscricoes.html" data-i18n="nav.aplicacoes">Inscrições</a></li><li><a href="regulamento.html" data-i18n="nav.regulamento">Regulamento</a></li><li><a href="faq.html" data-i18n="nav.faq">FAQ</a></li></ul></div>
+      <div><h4 data-i18n="footer.contato">CONTATO</h4><ul><li><a href="https://wa.me/5528999910919">WhatsApp +55 28 99991-0919</a></li><li><a target="_blank" rel="noopener" href="https://www.instagram.com/transcapixabahikeandfly/">Instagram</a></li><li><a target="_blank" rel="noopener" href="https://www.youtube.com/@TranscapixabaHikeandFly">YouTube</a></li></ul></div>
     </div>
     <div class="footer__bottom">
-      <span>© 2026 Transcapixaba Hike and Fly. Todos os direitos reservados.</span>
-      <a href="https://wa.me/5527988171917" target="_blank" rel="noopener" style="color:inherit; text-decoration:none">Desenvolvido por Guilherme Borborema</a>
+      <span data-i18n="footer.copyright">© 2026 Transcapixaba Hike and Fly. Todos os direitos reservados.</span>
+      <a href="https://wa.me/5527988171917" target="_blank" rel="noopener" style="color:inherit; text-decoration:none" data-i18n="footer.dev">Desenvolvido por Guilherme Borborema</a>
     </div>
   </div>
 </footer>

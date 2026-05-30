@@ -13,6 +13,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="assets/css/styles.css" />
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="assets/js/i18n.js" defer></script>
 </head>
 <body>
 
@@ -25,34 +26,38 @@
     <nav>
       <ul class="nav__links">
         <li class="nav__item--has-drop">
-          <a href="competicao.html">A Competição</a>
+          <a href="competicao.html" data-i18n="nav.competicao">A Competição</a>
           <ul class="nav__drop">
-            <li><a href="faq.html">Perguntas Frequentes</a></li>
+            <li><a href="faq.html" data-i18n="nav.faq">Perguntas Frequentes</a></li>
           </ul>
         </li>
-        <li><a href="rota.html">Rota 2026</a></li>
-        <li><a href="regulamento.html">Regulamento</a></li>
+        <li><a href="rota.html" data-i18n="nav.rota">Rota 2026</a></li>
+        <li><a href="regulamento.html" data-i18n="nav.regulamento">Regulamento</a></li>
         <li class="nav__item--has-drop">
-          <a href="galeria.html">Galeria</a>
+          <a href="galeria.html" data-i18n="nav.galeria">Galeria</a>
           <ul class="nav__drop">
-            <li><a href="fotos-2023.html">Fotos 2023</a></li>
-            <li><a href="fotos-2024.html">Fotos 2024</a></li>
-            <li><a href="fotos-2025.html">Fotos 2025</a></li>
+            <li><a href="fotos-2023.html" data-i18n="nav.fotos2023">Fotos 2023</a></li>
+            <li><a href="fotos-2024.html" data-i18n="nav.fotos2024">Fotos 2024</a></li>
+            <li><a href="fotos-2025.html" data-i18n="nav.fotos2025">Fotos 2025</a></li>
           </ul>
         </li>
-        <li><a href="inscricoes.html">Aplicações</a></li>
+        <li><a href="inscricoes.html" data-i18n="nav.aplicacoes">Aplicações</a></li>
         <li class="nav__item--has-drop">
-          <a href="resultados-2025.html">Resultados</a>
+          <a href="resultados-2025.html" data-i18n="nav.resultados">Resultados</a>
           <ul class="nav__drop">
-            <li><a href="resultados-2023.html">Resultados 2023</a></li>
-            <li><a href="resultados-2024.html">Resultados 2024</a></li>
-            <li><a href="resultados-2025.html">Resultados 2025</a></li>
+            <li><a href="resultados-2023.html" data-i18n="nav.resultados2023">Resultados 2023</a></li>
+            <li><a href="resultados-2024.html" data-i18n="nav.resultados2024">Resultados 2024</a></li>
+            <li><a href="resultados-2025.html" data-i18n="nav.resultados2025">Resultados 2025</a></li>
           </ul>
         </li>
       </ul>
     </nav>
-    <a href="inscricoes.html" class="nav__cta">Inscrições</a>
-    <button class="nav__burger" aria-label="Abrir menu">
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button type="button" data-lang="pt">PT</button>
+      <button type="button" data-lang="en">EN</button>
+    </div>
+    <a href="inscricoes.html" class="nav__cta" data-i18n="nav.inscricoes">Inscrições</a>
+    <button class="nav__burger" aria-label="Abrir menu" data-i18n-attr="aria-label:nav.openMenu">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
     </button>
   </div>
@@ -67,18 +72,18 @@
   </div>
 
   <div class="hero__content container">
-    <span class="hero__date">EDIÇÃO 2026 · 13 — 25 JULHO</span>
+    <span class="hero__date" data-i18n="home.hero.date">EDIÇÃO 2026 · 13 — 25 JULHO</span>
     <h1 class="hero__title">TRANSCAPIXABA<span>HIKE AND FLY</span></h1>
-    <p class="hero__sub">A maior competição de Hike and Fly das Américas. Inspirada no Red&nbsp;Bull X‑Alps, cruzando as montanhas do Espírito Santo do interior ao litoral.</p>
+    <p class="hero__sub" data-i18n="home.hero.sub">A maior competição de Hike and Fly das Américas. Inspirada no Red&nbsp;Bull X‑Alps, cruzando as montanhas do Espírito Santo do interior ao litoral.</p>
     <div class="btn-row">
-      <a href="rota.html" class="btn btn--primary">Rota 2026 →</a>
+      <a href="rota.html" class="btn btn--primary" data-i18n="home.hero.cta">Rota 2026 →</a>
     </div>
 
     <div class="hero__stats">
-      <div><div class="stat__n">600</div><span class="stat__l">km de travessia</span></div>
-      <div><div class="stat__n">27</div><span class="stat__l">atletas</span></div>
-      <div><div class="stat__n">12</div><span class="stat__l">dias de prova</span></div>
-      <div><div class="stat__n">7</div><span class="stat__l">países representados</span></div>
+      <div><div class="stat__n">600</div><span class="stat__l" data-i18n="home.hero.stat1">km de travessia</span></div>
+      <div><div class="stat__n">27</div><span class="stat__l" data-i18n="home.hero.stat2">atletas</span></div>
+      <div><div class="stat__n">12</div><span class="stat__l" data-i18n="home.hero.stat3">dias de prova</span></div>
+      <div><div class="stat__n">7</div><span class="stat__l" data-i18n="home.hero.stat4">países representados</span></div>
     </div>
   </div>
 </section>
@@ -88,16 +93,16 @@
   <div class="container">
     <div class="countdown__grid">
       <div>
-        <div class="eyebrow">Próxima edição</div>
-        <h2 style="font-size: clamp(1.6rem,3vw,2.4rem); margin:0">Largada em…</h2>
+        <div class="eyebrow" data-i18n="home.countdown.eyebrow">Próxima edição</div>
+        <h2 style="font-size: clamp(1.6rem,3vw,2.4rem); margin:0" data-i18n="home.countdown.title">Largada em…</h2>
       </div>
       <div class="countdown__nums" id="countdown">
-        <div class="countdown__box"><div class="countdown__num">00</div><div class="countdown__label">Dias</div></div>
-        <div class="countdown__box"><div class="countdown__num">00</div><div class="countdown__label">Horas</div></div>
-        <div class="countdown__box"><div class="countdown__num">00</div><div class="countdown__label">Min</div></div>
-        <div class="countdown__box"><div class="countdown__num">00</div><div class="countdown__label">Seg</div></div>
+        <div class="countdown__box"><div class="countdown__num">00</div><div class="countdown__label" data-i18n="home.countdown.days">Dias</div></div>
+        <div class="countdown__box"><div class="countdown__num">00</div><div class="countdown__label" data-i18n="home.countdown.hours">Horas</div></div>
+        <div class="countdown__box"><div class="countdown__num">00</div><div class="countdown__label" data-i18n="home.countdown.min">Min</div></div>
+        <div class="countdown__box"><div class="countdown__num">00</div><div class="countdown__label" data-i18n="home.countdown.sec">Seg</div></div>
       </div>
-      <a href="inscricoes.html" class="btn btn--primary">Inscreva-se</a>
+      <a href="inscricoes.html" class="btn btn--primary" data-i18n="home.countdown.cta">Inscreva-se</a>
     </div>
   </div>
 </section>
@@ -106,9 +111,9 @@
 <section>
   <div class="container">
     <div class="section__header">
-      <div class="eyebrow">A TRANSCAPIXABA H&F</div>
-      <h2>Caminhar. Voar. Repetir.</h2>
-      <p>A Transcapixaba H&amp;F é a travessia do estado do Espírito Santo caminhando e voando. Os atletas devem percorrer uma rota pré-definida, com Turnpoints que podem ser no formato de raio ou placa. É uma corrida por terra e ar e ganha o atleta que cruzar a linha de chegada primeiro, tendo passado por todos os Turnpoints.</p>
+      <div class="eyebrow" data-i18n="home.about.eyebrow">A TRANSCAPIXABA H&F</div>
+      <h2 data-i18n="home.about.title">Caminhar. Voar. Repetir.</h2>
+      <p data-i18n="home.about.desc">A Transcapixaba H&amp;F é a travessia do estado do Espírito Santo caminhando e voando. Os atletas devem percorrer uma rota pré-definida, com Turnpoints que podem ser no formato de raio ou placa. É uma corrida por terra e ar e ganha o atleta que cruzar a linha de chegada primeiro, tendo passado por todos os Turnpoints.</p>
     </div>
 
     <div class="features">
@@ -116,29 +121,29 @@
         <div class="feature__icon">
           <svg viewBox="0 0 24 24"><path d="M3 19l5-7 4 5 3-4 6 6"/><circle cx="6" cy="6" r="2"/></svg>
         </div>
-        <h3>Travessia épica</h3>
-        <p>Aproximadamente 600 km cruzando montanhas, vales e passando por 16 cidades do Espírito Santo.</p>
+        <h3 data-i18n="home.f1.title">Travessia épica</h3>
+        <p data-i18n="home.f1.desc">Aproximadamente 600 km cruzando montanhas, vales e passando por 16 cidades do Espírito Santo.</p>
       </article>
       <article class="feature" data-reveal>
         <div class="feature__icon">
           <svg viewBox="0 0 24 24"><path d="M4 17h16M4 17l2-7h12l2 7M6 17v3M18 17v3M8 10V6a4 4 0 018 0v4"/></svg>
         </div>
-        <h3>Cada atleta possui uma equipe</h3>
-        <p>Cada atleta deve estar acompanhado por uma equipe de suporte com no mínimo uma pessoa em um carro.</p>
+        <h3 data-i18n="home.f2.title">Cada atleta possui uma equipe</h3>
+        <p data-i18n="home.f2.desc">Cada atleta deve estar acompanhado por uma equipe de suporte com no mínimo uma pessoa em um carro.</p>
       </article>
       <article class="feature" data-reveal>
         <div class="feature__icon">
           <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 010 20M12 2a15 15 0 000 20"/></svg>
         </div>
-        <h3>Pilotos do mundo</h3>
-        <p>Desde a primeira edição, a Transcapixaba se tornou internacional e recebe atletas de todo o mundo.</p>
+        <h3 data-i18n="home.f3.title">Pilotos do mundo</h3>
+        <p data-i18n="home.f3.desc">Desde a primeira edição, a Transcapixaba se tornou internacional e recebe atletas de todo o mundo.</p>
       </article>
       <article class="feature" data-reveal>
         <div class="feature__icon">
           <svg viewBox="0 0 24 24"><path d="M8 21h8M12 17v4M6 3h12l2 4-8 10L4 7z"/></svg>
         </div>
-        <h3>Inspiração no Red Bull X-Alps</h3>
-        <p>Foi a primeira competição de travessia realizada no Brasil, inspirada na maior competição do mundo.</p>
+        <h3 data-i18n="home.f4.title">Inspiração no Red Bull X-Alps</h3>
+        <p data-i18n="home.f4.desc">Foi a primeira competição de travessia realizada no Brasil, inspirada na maior competição do mundo.</p>
       </article>
     </div>
   </div>
@@ -148,7 +153,7 @@
 <section class="section--dark">
   <div class="container">
     <div class="section__header">
-      <div class="eyebrow">A JORNADA 2025</div>
+      <div class="eyebrow" data-i18n="home.jornada.eyebrow">A JORNADA 2025</div>
     </div>
     <div class="carousel" data-autoplay="4500" aria-roledescription="carrossel">
       <div class="carousel__track">
@@ -187,7 +192,7 @@
       </div>
     </div>
     <p style="margin-top:24px; text-align:center">
-      <a href="fotos-2025.html" class="btn btn--ghost">Ver galeria completa →</a>
+      <a href="fotos-2025.html" class="btn btn--ghost" data-i18n="home.carousel.viewGallery">Ver galeria completa →</a>
     </p>
   </div>
 </section>
@@ -196,9 +201,9 @@
 <section style="background: var(--c-bg-2)">
   <div class="container">
     <div class="section__header">
-      <div class="eyebrow">PÓDIO 2025</div>
-      <h2>Os cinco que voaram mais rápido</h2>
-      <p>Em 16 a 20 de julho de 2025, 22 atletas cruzaram 125,8 km de Venda Nova do Imigrante até a Ponte de Itapaboana.</p>
+      <div class="eyebrow" data-i18n="home.podio.eyebrow">PÓDIO 2025</div>
+      <h2 data-i18n="home.podio.title">Os cinco que voaram mais rápido</h2>
+      <p data-i18n="home.podio.desc">Em 16 a 20 de julho de 2025, 22 atletas cruzaram 125,8 km de Venda Nova do Imigrante até a Ponte de Itapaboana.</p>
     </div>
 
     <div class="athletes">
@@ -217,8 +222,8 @@
           <h3 class="athlete__name">John Boettcher</h3>
           <div class="athlete__meta">Phi Maestro 2 Lite</div>
           <div class="athlete__stats">
-            <div><strong>21h45</strong>Tempo</div>
-            <div><strong>125,8 km</strong>Distância</div>
+            <div><strong>21h45</strong><span data-i18n="home.podio.time">Tempo</span></div>
+            <div><strong>125,8 km</strong><span data-i18n="home.podio.dist">Distância</span></div>
           </div>
         </div>
         <div class="athlete__rank">1º</div>
@@ -239,8 +244,8 @@
           <h3 class="athlete__name">Ben Hodgson</h3>
           <div class="athlete__meta">Ozone Zeolite 2</div>
           <div class="athlete__stats">
-            <div><strong>22h00</strong>Tempo</div>
-            <div><strong>125,8 km</strong>Distância</div>
+            <div><strong>22h00</strong><span data-i18n="home.podio.time">Tempo</span></div>
+            <div><strong>125,8 km</strong><span data-i18n="home.podio.dist">Distância</span></div>
           </div>
         </div>
         <div class="athlete__rank">2º</div>
@@ -261,8 +266,8 @@
           <h3 class="athlete__name">Kayna Rodrigues Moreira</h3>
           <div class="athlete__meta">Ozone Zeolite GT</div>
           <div class="athlete__stats">
-            <div><strong>22h25</strong>Tempo</div>
-            <div><strong>125,8 km</strong>Distância</div>
+            <div><strong>22h25</strong><span data-i18n="home.podio.time">Tempo</span></div>
+            <div><strong>125,8 km</strong><span data-i18n="home.podio.dist">Distância</span></div>
           </div>
         </div>
         <div class="athlete__rank">3º</div>
@@ -283,8 +288,8 @@
           <h3 class="athlete__name">Raphael Laghi</h3>
           <div class="athlete__meta">BGD Lynx 2</div>
           <div class="athlete__stats">
-            <div><strong>23h04</strong>Tempo</div>
-            <div><strong>125,8 km</strong>Distância</div>
+            <div><strong>23h04</strong><span data-i18n="home.podio.time">Tempo</span></div>
+            <div><strong>125,8 km</strong><span data-i18n="home.podio.dist">Distância</span></div>
           </div>
         </div>
         <div class="athlete__rank">4º</div>
@@ -305,8 +310,8 @@
           <h3 class="athlete__name">Rafael Saladini</h3>
           <div class="athlete__meta">Ozone Zeolite 2 GT</div>
           <div class="athlete__stats">
-            <div><strong>23h15</strong>Tempo</div>
-            <div><strong>125,8 km</strong>Distância</div>
+            <div><strong>23h15</strong><span data-i18n="home.podio.time">Tempo</span></div>
+            <div><strong>125,8 km</strong><span data-i18n="home.podio.dist">Distância</span></div>
           </div>
         </div>
         <div class="athlete__rank">5º</div>
@@ -314,7 +319,7 @@
     </div>
 
     <div style="margin-top:40px; text-align:center">
-      <a href="resultados-2025.html" class="btn btn--ghost">Ver classificação completa →</a>
+      <a href="resultados-2025.html" class="btn btn--ghost" data-i18n="home.podio.full">Ver classificação completa →</a>
     </div>
   </div>
 </section>
@@ -323,15 +328,15 @@
 <section>
   <div class="container">
     <div class="section__header">
-      <div class="eyebrow">ROTA 2026</div>
-      <h2>Travessia do norte ao sul</h2>
-      <p>De Vila Pereira (Nanuque/MG) a Bom Jesus do Itabapoana (RJ), cruzando o Espírito Santo. Doze turnpoints. Doze dias de janela.</p>
+      <div class="eyebrow" data-i18n="home.rota.eyebrow">ROTA 2026</div>
+      <h2 data-i18n="home.rota.title">Travessia do norte ao sul</h2>
+      <p data-i18n="home.rota.desc">De Vila Pereira (Nanuque/MG) a Bom Jesus do Itabapoana (RJ), cruzando o Espírito Santo. Doze turnpoints. Doze dias de janela.</p>
     </div>
     <div class="map-wrap">
       <div id="route-map" style="width:100%; height:620px; background:#061f3f"></div>
     </div>
     <p style="margin-top:12px; color: var(--c-muted); font-size: .9rem">
-      Mapa interativo · Clique em um marcador ou cilindro para detalhes. <a href="rota.html">Ver página completa da rota →</a>
+      <span data-i18n="home.map.hint">Mapa interativo · Clique em um marcador ou cilindro para detalhes.</span> <a href="rota.html" data-i18n="home.map.full">Ver página completa da rota →</a>
     </p>
     <div class="checkpoints">
       <div class="cp"><div class="cp__num">01</div><div class="cp__name">Vila Pereira</div><div class="cp__meta">Largada · Nanuque/MG</div></div>
@@ -356,9 +361,9 @@
 <section style="background: var(--c-bg-2)">
   <div class="container">
     <div class="section__header">
-      <div class="eyebrow">GALERIA</div>
-      <h2>Imagens da prova</h2>
-      <p>Decolagens, térmicas, pouso na grama, equipes em ação. Um pedaço da Transcapixaba em cada quadro.</p>
+      <div class="eyebrow" data-i18n="home.galeria.eyebrow">GALERIA</div>
+      <h2 data-i18n="home.galeria.title">Imagens da prova</h2>
+      <p data-i18n="home.galeria.desc">Decolagens, térmicas, pouso na grama, equipes em ação. Um pedaço da Transcapixaba em cada quadro.</p>
     </div>
     <div class="gallery">
       <a class="g-1" href="fotos-2025.html" style="background-image:url('assets/img/fotos-2025/rampa/foto-13.jpg')" aria-label="Atleta na travessia"></a>
@@ -374,8 +379,8 @@
 <section>
   <div class="container">
     <div class="section__header">
-      <div class="eyebrow">QUEM APOIA</div>
-      <h2>Patrocinadores</h2>
+      <div class="eyebrow" data-i18n="home.sponsors.eyebrow">QUEM APOIA</div>
+      <h2 data-i18n="home.sponsors.title">Patrocinadores</h2>
     </div>
     <div class="sponsors sponsors--featured">
       <div class="sponsor"><img src="assets/img/sponsors/governo-es.png" alt="Governo do Estado do Espírito Santo" loading="lazy" /></div>
@@ -386,8 +391,8 @@
     </div>
 
     <div class="section__header" style="margin-top: 70px">
-      <div class="eyebrow">PREFEITURAS PARCEIRAS</div>
-      <h2>Apoio municipal</h2>
+      <div class="eyebrow" data-i18n="home.prefeituras.eyebrow">PREFEITURAS PARCEIRAS</div>
+      <h2 data-i18n="home.prefeituras.title">Apoio municipal</h2>
     </div>
     <div class="sponsors">
       <div class="sponsor"><img src="img/patrocinadores/baixo_guandu.jpeg" alt="Prefeitura de Baixo Guandu" loading="lazy" /></div>
@@ -405,27 +410,27 @@
         <a href="index.html" class="nav__logo" style="margin-bottom:18px; display:inline-flex">
           <img src="img/logo_footer.png" alt="Transcapixaba Hike and Fly" style="height:64px; width:auto" />
         </a>
-        <p style="color: rgba(255,255,255,.75); max-width: 360px">A maior competição de Hike and Fly do Brasil. Inspirada no Red&nbsp;Bull X‑Alps e adaptada às montanhas do Espírito Santo.</p>
+        <p style="color: rgba(255,255,255,.75); max-width: 360px" data-i18n="footer.desc">A maior competição de Hike and Fly do Brasil. Inspirada no Red&nbsp;Bull X‑Alps e adaptada às montanhas do Espírito Santo.</p>
       </div>
       <div>
-        <h4>EVENTO</h4>
+        <h4 data-i18n="footer.evento">EVENTO</h4>
         <ul>
-          <li><a href="competicao.html">A Competição</a></li>
-          <li><a href="rota.html">Rota 2026</a></li>
-          <li><a href="galeria.html">Galeria</a></li>
-          <li><a href="resultados-2025.html">Resultados</a></li>
+          <li><a href="competicao.html" data-i18n="nav.competicao">A Competição</a></li>
+          <li><a href="rota.html" data-i18n="nav.rota">Rota 2026</a></li>
+          <li><a href="galeria.html" data-i18n="nav.galeria">Galeria</a></li>
+          <li><a href="resultados-2025.html" data-i18n="nav.resultados">Resultados</a></li>
         </ul>
       </div>
       <div>
-        <h4>COMPETIDOR</h4>
+        <h4 data-i18n="footer.competidor">COMPETIDOR</h4>
         <ul>
-          <li><a href="inscricoes.html">Inscrições</a></li>
-          <li><a href="regulamento.html">Regulamento</a></li>
-          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="inscricoes.html" data-i18n="nav.aplicacoes">Inscrições</a></li>
+          <li><a href="regulamento.html" data-i18n="nav.regulamento">Regulamento</a></li>
+          <li><a href="faq.html" data-i18n="nav.faq">FAQ</a></li>
         </ul>
       </div>
       <div>
-        <h4>CONTATO</h4>
+        <h4 data-i18n="footer.contato">CONTATO</h4>
         <ul>
           <li><a href="https://wa.me/5528999910919">WhatsApp +55 28 99991-0919</a></li>
           <li><a target="_blank" rel="noopener" href="https://www.instagram.com/transcapixabahikeandfly/">Instagram</a></li>
@@ -434,8 +439,8 @@
       </div>
     </div>
     <div class="footer__bottom">
-      <span>© 2026 Transcapixaba Hike and Fly. Todos os direitos reservados.</span>
-      <a href="https://wa.me/5527988171917" target="_blank" rel="noopener" style="color:inherit; text-decoration:none">Desenvolvido por Guilherme Borborema</a>
+      <span data-i18n="footer.copyright">© 2026 Transcapixaba Hike and Fly. Todos os direitos reservados.</span>
+      <a href="https://wa.me/5527988171917" target="_blank" rel="noopener" style="color:inherit; text-decoration:none" data-i18n="footer.dev">Desenvolvido por Guilherme Borborema</a>
       <div class="socials">
         <a target="_blank" rel="noopener" href="https://www.instagram.com/transcapixabahikeandfly/" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 01-1.38-.9 3.7 3.7 0 01-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63a5.86 5.86 0 00-2.13 1.38A5.86 5.86 0 00.63 4.14C.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.73 1.46 1.38 2.13a5.86 5.86 0 002.13 1.38c.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56a5.86 5.86 0 002.13-1.38 5.86 5.86 0 001.38-2.13c.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91a5.86 5.86 0 00-1.38-2.13A5.86 5.86 0 0019.86.63c-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 100 12.32 6.16 6.16 0 000-12.32zm0 10.16a4 4 0 110-8 4 4 0 010 8zm6.4-11.84a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z"/></svg></a>
         <a href="https://wa.me/5528999910919" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.84 9.84 0 0012.04 2zm0 18.15h-.01a8.2 8.2 0 01-4.18-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.2 8.2 0 01-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24a8.2 8.2 0 015.83 2.41 8.2 8.2 0 012.41 5.83c0 4.54-3.7 8.24-8.24 8.24zm4.51-6.18c-.25-.12-1.46-.72-1.69-.8-.23-.08-.4-.12-.56.12-.16.25-.65.8-.8.97-.15.16-.3.18-.55.06-.25-.12-1.04-.38-1.99-1.23-.74-.66-1.23-1.47-1.37-1.72-.14-.25-.02-.39.11-.51.11-.11.25-.3.37-.45.12-.15.16-.25.24-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.49-.41-.42-.56-.43-.14-.01-.31-.01-.48-.01a.93.93 0 00-.68.31c-.23.25-.89.87-.89 2.12 0 1.25.91 2.46 1.04 2.63.13.16 1.8 2.74 4.36 3.84.61.26 1.09.42 1.46.54.61.19 1.17.17 1.61.1.49-.07 1.46-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.28z"/></svg></a>
