@@ -137,7 +137,6 @@ p { margin: 0 0 1em; color: #34465e; }
   border-bottom-color: transparent;
 }
 .nav--transparent .nav__links a { color: #fff; }
-.nav--transparent .nav__logo .logo-fill-text { fill: #fff !important; }
 .nav.is-scrolled {
   background: rgba(255,255,255,0.95);
   border-bottom-color: var(--c-border);
