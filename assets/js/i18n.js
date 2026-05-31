@@ -82,7 +82,7 @@ const TRANSLATIONS = {
     // ===== COMPETIÇÃO =====
     "comp.head.eyebrow": "A COMPETIÇÃO",
     "comp.head.title": "A Transcapixaba",
-    "comp.head.sub": "A primeira travessia de Hike and Fly do estado do Espírito Santo. Inspirada no Red Bull X-Alps, adaptada às montanhas capixabas — e aberta ao mundo.",
+    "comp.head.sub": "A primeira travessia de Hike and Fly do estado do Espírito Santo.",
     "comp.story.title": "De uma rota de Lucas Porto à maior competição de travessia das Américas",
     "comp.story.p1": "A Transcapixaba H&amp;F é a travessia do estado do Espírito Santo caminhando e voando. Em 2022, uma rota foi aberta pelo atleta capixaba <strong>Lucas Porto</strong>, que cruzou o estado, de norte a sul, caminhando e voando, por 665 km. Ao seu lado estavam <strong>John e Chris Boettcher</strong> e, no suporte da equipe, <strong>Micheli Sossai</strong>.",
     "comp.story.p2": "Percebendo o potencial da rota, Lucas e Micheli resolveram transformá-la em uma competição — e assim nasceu a <strong>Transcapixaba H&amp;F</strong>. Diante da complexidade do evento, eles dividiram o projeto em três partes iniciais. Em 2023 aconteceu a primeira edição, com largada em Ecoporanga e chegada em Pancas. A segunda edição aconteceu em 2024, com largada em Pancas e chegada em Venda Nova do Imigrante. A terceira edição contemplou a parte final do projeto, com largada em Venda Nova do Imigrante e chegada em Mimoso do Sul, às margens do Rio Itabapoana.",
@@ -518,7 +518,7 @@ const TRANSLATIONS = {
     // ===== COMPETIÇÃO =====
     "comp.head.eyebrow": "THE RACE",
     "comp.head.title": "Transcapixaba",
-    "comp.head.sub": "The first Hike and Fly traverse of Espírito Santo. Inspired by Red Bull X-Alps, adapted to the capixaba mountains — and open to the world.",
+    "comp.head.sub": "The first Hike and Fly traverse of Espírito Santo.",
     "comp.story.title": "From a Lucas Porto route to the largest traverse competition in the Americas",
     "comp.story.p1": "Transcapixaba H&amp;F is the traverse of Espírito Santo on foot and by paraglider. In 2022, a route was opened by capixaba athlete <strong>Lucas Porto</strong>, who crossed the state from north to south on foot and flying, covering 665 km. Alongside him were <strong>John and Chris Boettcher</strong>, with <strong>Micheli Sossai</strong> supporting the team.",
     "comp.story.p2": "Seeing the potential of the route, Lucas and Micheli decided to turn it into a competition — and that's how <strong>Transcapixaba H&amp;F</strong> was born. Given the complexity, they split the project into three initial stages. The first edition took place in 2023, with the start in Ecoporanga and finish in Pancas. The second edition happened in 2024, starting in Pancas and finishing in Venda Nova do Imigrante. The third edition covered the final segment, starting in Venda Nova do Imigrante and finishing in Mimoso do Sul, on the banks of the Itabapoana River.",
