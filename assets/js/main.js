@@ -3,17 +3,54 @@
 // ---------- MOBILE MENU ----------
 document.addEventListener("DOMContentLoaded", () => {
   const burger = document.querySelector(".nav__burger");
-  const links = document.querySelector(".nav__links");
-  if (burger && links) {
+  const navEl = document.querySelector(".nav");
+
+  // Build sectioned mobile menu (mirrors footer structure)
+  let mobileMenu = null;
+  if (navEl) {
+    mobileMenu = document.createElement("nav");
+    mobileMenu.className = "nav__mobile";
+    mobileMenu.setAttribute("aria-label", "Menu mobile");
+    mobileMenu.innerHTML = `
+      <section>
+        <h4 data-i18n="footer.evento">EVENTO</h4>
+        <ul>
+          <li><a href="competicao.html" data-i18n="nav.competicao">A Competição</a></li>
+          <li><a href="rota.html" data-i18n="nav.rota">Rota 2026</a></li>
+          <li><a href="galeria.html" data-i18n="nav.galeria">Galeria</a></li>
+          <li><a href="resultados-2025.html" data-i18n="nav.resultados">Resultados</a></li>
+        </ul>
+      </section>
+      <section>
+        <h4 data-i18n="footer.competidor">COMPETIDOR</h4>
+        <ul>
+          <li><a href="inscricoes.html" data-i18n="nav.aplicacoes">Aplicações</a></li>
+          <li><a href="regulamento.html" data-i18n="nav.regulamento">Regulamento</a></li>
+          <li><a href="faq.html" data-i18n="nav.faq">Perguntas Frequentes</a></li>
+        </ul>
+      </section>
+      <section>
+        <h4 data-i18n="footer.contato">CONTATO</h4>
+        <ul>
+          <li><a href="https://wa.me/5528999910919">WhatsApp +55 28 99991-0919</a></li>
+          <li><a target="_blank" rel="noopener" href="https://www.instagram.com/transcapixabahikeandfly/">Instagram</a></li>
+          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/@TranscapixabaHikeandFly">YouTube</a></li>
+        </ul>
+      </section>
+    `;
+    navEl.appendChild(mobileMenu);
+    // Re-apply translations now that new nodes exist
+    if (typeof applyTranslations === "function") applyTranslations();
+  }
+
+  if (burger && mobileMenu) {
     burger.addEventListener("click", () => {
-      links.classList.toggle("nav__links--open");
-      document.body.classList.toggle("nav-is-open", links.classList.contains("nav__links--open"));
+      mobileMenu.classList.toggle("is-open");
+      document.body.classList.toggle("nav-is-open", mobileMenu.classList.contains("is-open"));
     });
-    // Fecha menu ao clicar num link final (não em trigger de dropdown)
-    links.querySelectorAll("a").forEach((a) => {
+    mobileMenu.querySelectorAll("a").forEach((a) => {
       a.addEventListener("click", () => {
-        if (a.closest(".nav__item--has-drop") && !a.closest(".nav__drop")) return;
-        links.classList.remove("nav__links--open");
+        mobileMenu.classList.remove("is-open");
         document.body.classList.remove("nav-is-open");
       });
     });
