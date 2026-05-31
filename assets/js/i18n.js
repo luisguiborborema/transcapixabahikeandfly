@@ -22,7 +22,7 @@ const TRANSLATIONS = {
     "nav.openMenu": "Abrir menu",
 
     // ===== FOOTER =====
-    "footer.desc": "A maior competição de Hike and Fly do Brasil. Inspirada no Red&nbsp;Bull X‑Alps e adaptada às montanhas do Espírito Santo.",
+    "footer.desc": "A maior competição de Hike and Fly das Américas!",
     "footer.evento": "EVENTO",
     "footer.competidor": "COMPETIDOR",
     "footer.contato": "CONTATO",
@@ -34,7 +34,7 @@ const TRANSLATIONS = {
     // ===== HOME =====
     "home.title": "Transcapixaba — Hike and Fly | Maior travessia de parapente e caminhada do Brasil",
     "home.hero.date": "EDIÇÃO 2026 · 13 — 25 JULHO",
-    "home.hero.sub": "A maior competição de Hike and Fly das Américas.",
+    "home.hero.sub": "A maior competição de Hike and Fly das Américas!",
     "home.hero.cta": "Rota 2026 →",
     "home.hero.stat1": "km de travessia",
     "home.hero.stat2": "atletas",
@@ -82,7 +82,7 @@ const TRANSLATIONS = {
     // ===== COMPETIÇÃO =====
     "comp.head.eyebrow": "A COMPETIÇÃO",
     "comp.head.title": "A Transcapixaba",
-    "comp.head.sub": "A primeira travessia de Hike and Fly do estado do Espírito Santo.",
+    "comp.head.sub": "A maior competição de Hike and Fly das Américas!",
     "comp.story.title": "De uma rota de Lucas Porto à maior competição de travessia das Américas",
     "comp.story.p1": "A Transcapixaba H&amp;F é a travessia do estado do Espírito Santo caminhando e voando. Em 2022, uma rota foi aberta pelo atleta capixaba <strong>Lucas Porto</strong>, que cruzou o estado, de norte a sul, caminhando e voando, por 665 km. Ao seu lado estavam <strong>John e Chris Boettcher</strong> e, no suporte da equipe, <strong>Micheli Sossai</strong>.",
     "comp.story.p2": "Percebendo o potencial da rota, Lucas e Micheli resolveram transformá-la em uma competição — e assim nasceu a <strong>Transcapixaba H&amp;F</strong>. Diante da complexidade do evento, eles dividiram o projeto em três partes iniciais. Em 2023 aconteceu a primeira edição, com largada em Ecoporanga e chegada em Pancas. A segunda edição aconteceu em 2024, com largada em Pancas e chegada em Venda Nova do Imigrante. A terceira edição contemplou a parte final do projeto, com largada em Venda Nova do Imigrante e chegada em Mimoso do Sul, às margens do Rio Itabapoana.",
@@ -458,7 +458,7 @@ const TRANSLATIONS = {
     "nav.openMenu": "Open menu",
 
     // ===== FOOTER =====
-    "footer.desc": "Brazil's largest Hike and Fly competition. Inspired by Red&nbsp;Bull X‑Alps, adapted to the mountains of Espírito Santo.",
+    "footer.desc": "The largest Hike and Fly competition in the Americas!",
     "footer.evento": "EVENT",
     "footer.competidor": "COMPETITOR",
     "footer.contato": "CONTACT",
@@ -470,7 +470,7 @@ const TRANSLATIONS = {
     // ===== HOME =====
     "home.title": "Transcapixaba — Hike and Fly | Largest paragliding and trekking traverse in Brazil",
     "home.hero.date": "2026 EDITION · JULY 13 — 25",
-    "home.hero.sub": "The largest Hike and Fly competition in the Americas.",
+    "home.hero.sub": "The largest Hike and Fly competition in the Americas!",
     "home.hero.cta": "2026 Route →",
     "home.hero.stat1": "km traverse",
     "home.hero.stat2": "athletes",
@@ -518,7 +518,7 @@ const TRANSLATIONS = {
     // ===== COMPETIÇÃO =====
     "comp.head.eyebrow": "THE RACE",
     "comp.head.title": "Transcapixaba",
-    "comp.head.sub": "The first Hike and Fly traverse of Espírito Santo.",
+    "comp.head.sub": "The largest Hike and Fly competition in the Americas!",
     "comp.story.title": "From a Lucas Porto route to the largest traverse competition in the Americas",
     "comp.story.p1": "Transcapixaba H&amp;F is the traverse of Espírito Santo on foot and by paraglider. In 2022, a route was opened by capixaba athlete <strong>Lucas Porto</strong>, who crossed the state from north to south on foot and flying, covering 665 km. Alongside him were <strong>John and Chris Boettcher</strong>, with <strong>Micheli Sossai</strong> supporting the team.",
     "comp.story.p2": "Seeing the potential of the route, Lucas and Micheli decided to turn it into a competition — and that's how <strong>Transcapixaba H&amp;F</strong> was born. Given the complexity, they split the project into three initial stages. The first edition took place in 2023, with the start in Ecoporanga and finish in Pancas. The second edition happened in 2024, starting in Pancas and finishing in Venda Nova do Imigrante. The third edition covered the final segment, starting in Venda Nova do Imigrante and finishing in Mimoso do Sul, on the banks of the Itabapoana River.",
