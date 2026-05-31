@@ -334,6 +334,7 @@ p { margin: 0 0 1em; color: #34465e; }
 }
 .hero__media svg, .hero__media img, .hero__media video {
   width: 100%; height: 100%; object-fit: cover;
+  object-position: center top;
 }
 .hero__content {
   position: relative;
