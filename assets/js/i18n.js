@@ -49,7 +49,7 @@ const TRANSLATIONS = {
     "home.countdown.cta": "Inscreva-se",
     "home.about.eyebrow": "A TRANSCAPIXABA H&F",
     "home.about.title": "Caminhar. Voar. Repetir.",
-    "home.about.desc": "A Transcapixaba H&amp;F é a travessia do estado do Espírito Santo caminhando e voando. Os atletas devem percorrer uma rota pré-definida, com Turnpoints que podem ser no formato de raio ou placa. É uma corrida por terra e ar e ganha o atleta que cruzar a linha de chegada primeiro, tendo passado por todos os Turnpoints.",
+    "home.about.desc": "A Transcapixaba H&amp;F é a travessia do estado do Espírito Santo caminhando e voando. Os atletas devem percorrer uma rota pré-definida, com Turnpoints que podem ser no formato de cilindro ou placa. É uma corrida por terra e ar e ganha o atleta que cruzar a linha de chegada primeiro, tendo passado por todos os Turnpoints.",
     "home.f1.title": "Travessia épica",
     "home.f1.desc": "Aproximadamente 600 km cruzando montanhas, vales e passando por 16 cidades do Espírito Santo.",
     "home.f2.title": "Cada atleta possui uma equipe",
