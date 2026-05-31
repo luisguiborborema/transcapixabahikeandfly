@@ -125,7 +125,7 @@ const TRANSLATIONS = {
     // ===== ROTA =====
     "rota.head.eyebrow": "EDIÇÃO 2026",
     "rota.head.title": "Rota 2026",
-    "rota.head.sub": "De Vila Pereira (Nanuque/MG) a Bom Jesus do Itabapoana (RJ), cruzando o Espírito Santo de norte a sul. Doze turnpoints. Cinco dias de janela.",
+    "rota.head.sub": "De Vila Pereira (Nanuque/MG) a Bom Jesus do Itabapoana (RJ), cruzando o Espírito Santo de norte a sul. Doze turnpoints. Doze dias de competição.",
     "rota.map.hint": "Mapa interativo · Linha da rota carregada do KML oficial. Clique em um marcador ou cilindro para detalhes.",
     "rota.tps.eyebrow": "TURNPOINTS",
     "rota.tps.title": "Largada, doze turnpoints e chegada",
@@ -561,7 +561,7 @@ const TRANSLATIONS = {
     // ===== ROTA =====
     "rota.head.eyebrow": "2026 EDITION",
     "rota.head.title": "2026 Route",
-    "rota.head.sub": "From Vila Pereira (Nanuque/MG) to Bom Jesus do Itabapoana (RJ), crossing Espírito Santo from north to south. Twelve turnpoints. Five-day window.",
+    "rota.head.sub": "From Vila Pereira (Nanuque/MG) to Bom Jesus do Itabapoana (RJ), crossing Espírito Santo from north to south. Twelve turnpoints. Twelve race days.",
     "rota.map.hint": "Interactive map · Route line loaded from the official KML. Click on a marker or cylinder for details.",
     "rota.tps.eyebrow": "TURNPOINTS",
     "rota.tps.title": "Start, twelve turnpoints and finish",
