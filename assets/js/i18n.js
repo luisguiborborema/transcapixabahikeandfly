@@ -34,7 +34,7 @@ const TRANSLATIONS = {
     // ===== HOME =====
     "home.title": "Transcapixaba — Hike and Fly | Maior travessia de parapente e caminhada do Brasil",
     "home.hero.date": "EDIÇÃO 2026 · 13 — 25 JULHO",
-    "home.hero.sub": "A maior competição de Hike and Fly das Américas. Inspirada no Red&nbsp;Bull X‑Alps, cruzando as montanhas do Espírito Santo do interior ao litoral.",
+    "home.hero.sub": "A maior competição de Hike and Fly das Américas.",
     "home.hero.cta": "Rota 2026 →",
     "home.hero.stat1": "km de travessia",
     "home.hero.stat2": "atletas",
@@ -470,7 +470,7 @@ const TRANSLATIONS = {
     // ===== HOME =====
     "home.title": "Transcapixaba — Hike and Fly | Largest paragliding and trekking traverse in Brazil",
     "home.hero.date": "2026 EDITION · JULY 13 — 25",
-    "home.hero.sub": "The largest Hike and Fly competition in the Americas. Inspired by Red&nbsp;Bull X‑Alps, crossing the mountains of Espírito Santo from inland to the coast.",
+    "home.hero.sub": "The largest Hike and Fly competition in the Americas.",
     "home.hero.cta": "2026 Route →",
     "home.hero.stat1": "km traverse",
     "home.hero.stat2": "athletes",
