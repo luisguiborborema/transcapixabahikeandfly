@@ -1231,8 +1231,10 @@ section { padding: 100px 0; }
   .athlete__rank { font-size: 1.8rem; padding: 8px 14px; }
 
   /* Timeline menos espaçada */
-  .timeline { padding-left: 28px; }
-  .timeline li { padding-left: 4px; }
+  .timeline { padding-left: 0; }
+  .timeline li { padding-left: 44px; }
+  .timeline li::before { left: 4px; width: 14px; height: 14px; }
+  .timeline::before { left: 12px; }
 
   /* Footer */
   .footer { padding: 50px 0 24px; }
