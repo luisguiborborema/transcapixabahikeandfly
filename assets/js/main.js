@@ -12,31 +12,14 @@ document.addEventListener("DOMContentLoaded", () => {
     mobileMenu.className = "nav__mobile";
     mobileMenu.setAttribute("aria-label", "Menu mobile");
     mobileMenu.innerHTML = `
-      <section>
-        <h4 data-i18n="footer.evento">EVENTO</h4>
-        <ul>
-          <li><a href="competicao.html" data-i18n="nav.competicao">A Competição</a></li>
-          <li><a href="rota.html" data-i18n="nav.rota">Rota 2026</a></li>
-          <li><a href="galeria.html" data-i18n="nav.galeria">Galeria</a></li>
-          <li><a href="resultados-2025.html" data-i18n="nav.resultados">Resultados</a></li>
-        </ul>
-      </section>
-      <section>
-        <h4 data-i18n="footer.competidor">COMPETIDOR</h4>
-        <ul>
-          <li><a href="inscricoes.html" data-i18n="nav.aplicacoes">Aplicações</a></li>
-          <li><a href="regulamento.html" data-i18n="nav.regulamento">Regulamento</a></li>
-          <li><a href="faq.html" data-i18n="nav.faq">Perguntas Frequentes</a></li>
-        </ul>
-      </section>
-      <section>
-        <h4 data-i18n="footer.contato">CONTATO</h4>
-        <ul>
-          <li><a href="https://wa.me/5528999910919">WhatsApp +55 28 99991-0919</a></li>
-          <li><a target="_blank" rel="noopener" href="https://www.instagram.com/transcapixabahikeandfly/">Instagram</a></li>
-          <li><a target="_blank" rel="noopener" href="https://www.youtube.com/@TranscapixabaHikeandFly">YouTube</a></li>
-        </ul>
-      </section>
+      <ul>
+        <li><a href="competicao.html" data-i18n="nav.competicao">A Competição</a></li>
+        <li><a href="rota.html" data-i18n="nav.rota">Rota 2026</a></li>
+        <li><a href="galeria.html" data-i18n="nav.galeria">Galeria</a></li>
+        <li><a href="resultados-2025.html" data-i18n="nav.resultados">Resultados</a></li>
+        <li><a href="regulamento.html" data-i18n="nav.regulamento">Regulamento</a></li>
+        <li><a href="faq.html" data-i18n="nav.faq">Perguntas Frequentes</a></li>
+      </ul>
     `;
     navEl.appendChild(mobileMenu);
     // Re-apply translations now that new nodes exist
