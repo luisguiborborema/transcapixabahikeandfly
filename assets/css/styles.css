@@ -513,7 +513,7 @@ section { padding: 100px 0; }
 /* ---------- ATHLETES GRID ---------- */
 .athletes {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
 .athlete {
@@ -595,15 +595,18 @@ section { padding: 100px 0; }
 }
 .athlete__rank {
   position: absolute;
-  bottom: 0; right: 0;
+  top: 14px; left: 14px;
   background: var(--c-accent);
   color: var(--c-blue-deep);
-  width: 60px; height: 60px;
   display: grid; place-items: center;
   font-family: var(--f-display);
-  font-size: 1.8rem;
-  clip-path: polygon(100% 0, 100% 100%, 0 100%);
-  padding: 14px 8px 8px 22px;
+  font-size: 2.4rem;
+  line-height: 1;
+  padding: 10px 18px;
+  border-radius: var(--radius);
+  box-shadow: 0 6px 18px rgba(0,0,0,.35);
+  letter-spacing: .02em;
+  z-index: 2;
 }
 
 /* podium */
@@ -1220,11 +1223,11 @@ section { padding: 100px 0; }
   .results--wide { font-size: .75rem; }
 
   /* Athlete podium menores */
-  .athletes { gap: 16px; }
+  .athletes { gap: 16px; grid-template-columns: repeat(2, 1fr); }
   .athlete__media { height: 240px; }
   .athlete__body { padding: 18px 18px 22px; }
   .athlete__name { font-size: 1.4rem; }
-  .athlete__rank { font-size: 2.2rem; }
+  .athlete__rank { font-size: 1.8rem; padding: 8px 14px; }
 
   /* Timeline menos espaçada */
   .timeline { padding-left: 28px; }
@@ -1258,6 +1261,7 @@ section { padding: 100px 0; }
   .section__header h2 { font-size: 1.5rem; }
 
   /* Athlete podium em 1 col com altura menor */
+  .athletes { grid-template-columns: 1fr; }
   .athlete__media { height: 200px; }
 }
 @media (max-width: 380px) {
