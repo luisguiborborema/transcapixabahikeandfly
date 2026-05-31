@@ -974,7 +974,7 @@ section { padding: 100px 0; }
 .carousel__slide.is-active { opacity: 1; pointer-events: auto; }
 .carousel__slide img {
   width: 100%; height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   display: block;
 }
 .carousel__btn {
