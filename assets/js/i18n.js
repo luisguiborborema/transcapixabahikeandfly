@@ -6,6 +6,7 @@ const TRANSLATIONS = {
   pt: {
     // ===== NAV =====
     "nav.competicao": "A Competição",
+    "nav.aovivo": "Ao Vivo",
     "nav.faq": "Perguntas Frequentes",
     "nav.rota": "Rota 2026",
     "nav.regulamento": "Regulamento",
@@ -20,6 +21,11 @@ const TRANSLATIONS = {
     "nav.resultados2025": "Resultados 2025",
     "nav.inscricoes": "Inscrições",
     "nav.openMenu": "Abrir menu",
+    "aovivo.badge": "AO VIVO",
+    "aovivo.head.title": "Rastreamento ao vivo",
+    "aovivo.head.sub": "Acompanhe em tempo real a posição dos atletas na travessia. O mapa é alimentado pelos rastreadores oficiais Flymaster durante a janela de competição (6h às 19h).",
+    "aovivo.hint": "Rastreamento oficial Flymaster · Atualiza automaticamente durante a competição. Se o mapa não carregar, abra em uma nova aba.",
+    "aovivo.open": "Abrir em nova aba ↗",
 
     // ===== FOOTER =====
     "footer.desc": "A maior competição de Hike and Fly das Américas!",
@@ -159,13 +165,13 @@ const TRANSLATIONS = {
       <h3 style="font-family: var(--f-display); font-size: 1.6rem; margin-top: 40px">2. Calendário de corrida</h3>
       <p><strong>13 dias: de 13 a 26 de julho de 2026.</strong></p>
       <ul style="padding-left: 22px">
-        <li><strong>13/07/2026, 13h</strong> — Conferência de equipamentos, assinatura dos termos de responsabilidade e retirada dos kits.</li>
-        <li><strong>13/07/2026, 15h30</strong> — Abertura da Transcapixaba H&amp;F 2026 com equipes, convidados e autoridades.</li>
-        <li><strong>13/07/2026, 16h</strong> — Briefing de segurança (OBRIGATÓRIO para atletas e suas equipes).</li>
-        <li><strong>14/07/2026, 7h</strong> — Concentração para a largada; <strong>8h</strong> — largada da Transcapixaba H&amp;F Full Edition 2026; <strong>19h</strong> — parada do dia 1.</li>
+        <li><strong>13/07/2026, 14h</strong> — Conferência de equipamentos, assinatura dos termos de responsabilidade e retirada dos kits.</li>
+        <li><strong>13/07/2026, 16h</strong> — Abertura da Transcapixaba H&amp;F 2026 com equipes, convidados e autoridades.</li>
+        <li><strong>13/07/2026, 17h</strong> — Briefing de segurança (OBRIGATÓRIO para atletas e suas equipes).</li>
+        <li><strong>14/07/2026, 7h</strong> — Concentração para a largada; <strong>9h</strong> — largada da Transcapixaba H&amp;F Full Edition 2026; <strong>19h</strong> — parada do dia 1.</li>
         <li><strong>15 a 24/07/2026</strong> — Janela de competição diária das 6h às 19h.</li>
         <li><strong>25/07/2026, das 6h às 15h</strong> — Janela de competição do último dia.</li>
-        <li><strong>25/07/2026, 17h</strong> — Cerimônia de premiação.</li>
+        <li><strong>25/07/2026, 18h</strong> — Cerimônia de premiação.</li>
       </ul>
       <p>Os horários podem ser modificados até a data da largada e serão comunicados previamente. A corrida é interrompida à noite entre as 19h e as 6h. Os pilotos devem ser acompanhados por um assistente/apoiador (OBRIGATÓRIO).</p>
 
@@ -440,6 +446,7 @@ const TRANSLATIONS = {
   en: {
     // ===== NAV =====
     "nav.competicao": "The Race",
+    "nav.aovivo": "Live",
     "nav.faq": "FAQ",
     "nav.rota": "2026 Route",
     "nav.regulamento": "Rules",
@@ -454,6 +461,11 @@ const TRANSLATIONS = {
     "nav.resultados2025": "Results 2025",
     "nav.inscricoes": "Register",
     "nav.openMenu": "Open menu",
+    "aovivo.badge": "LIVE",
+    "aovivo.head.title": "Live tracking",
+    "aovivo.head.sub": "Follow the athletes' positions across the traverse in real time. The map is powered by the official Flymaster trackers during the daily race window (6 am to 7 pm).",
+    "aovivo.hint": "Official Flymaster tracking · Updates automatically during the race. If the map doesn't load, open it in a new tab.",
+    "aovivo.open": "Open in new tab ↗",
 
     // ===== FOOTER =====
     "footer.desc": "The largest Hike and Fly competition in the Americas!",
@@ -592,13 +604,13 @@ const TRANSLATIONS = {
       <h3 style="font-family: var(--f-display); font-size: 1.6rem; margin-top: 40px">2. Race calendar</h3>
       <p><strong>13 days: from July 13 to 26, 2026.</strong></p>
       <ul style="padding-left: 22px">
-        <li><strong>07/13/2026, 1 pm</strong> — Equipment check, signing of liability releases and kit pickup.</li>
-        <li><strong>07/13/2026, 3:30 pm</strong> — Opening of Transcapixaba H&amp;F 2026 with teams, guests and authorities.</li>
-        <li><strong>07/13/2026, 4 pm</strong> — Safety briefing (MANDATORY for athletes and their teams).</li>
-        <li><strong>07/14/2026, 7 am</strong> — Pre-start gathering; <strong>8 am</strong> — start of Transcapixaba H&amp;F Full Edition 2026; <strong>7 pm</strong> — end of day 1.</li>
+        <li><strong>07/13/2026, 2 pm</strong> — Equipment check, signing of liability releases and kit pickup.</li>
+        <li><strong>07/13/2026, 4 pm</strong> — Opening of Transcapixaba H&amp;F 2026 with teams, guests and authorities.</li>
+        <li><strong>07/13/2026, 5 pm</strong> — Safety briefing (MANDATORY for athletes and their teams).</li>
+        <li><strong>07/14/2026, 7 am</strong> — Pre-start gathering; <strong>9 am</strong> — start of Transcapixaba H&amp;F Full Edition 2026; <strong>7 pm</strong> — end of day 1.</li>
         <li><strong>07/15 to 07/24/2026</strong> — Daily race window from 6 am to 7 pm.</li>
         <li><strong>07/25/2026, 6 am to 3 pm</strong> — Final day race window.</li>
-        <li><strong>07/25/2026, 5 pm</strong> — Awards ceremony.</li>
+        <li><strong>07/25/2026, 6 pm</strong> — Awards ceremony.</li>
       </ul>
       <p>Times may be modified until the day of the start and will be communicated in advance. The race is suspended overnight between 7 pm and 6 am. Pilots must be accompanied by an assistant/supporter (MANDATORY).</p>
 

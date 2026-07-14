@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     mobileMenu.setAttribute("aria-label", "Menu mobile");
     mobileMenu.innerHTML = `
       <ul>
+        <li class="nav__live-m"><a href="ao-vivo.html"><span class="live-dot" aria-hidden="true"></span><span data-i18n="nav.aovivo">Ao Vivo</span></a></li>
         <li><a href="competicao.html" data-i18n="nav.competicao">A Competição</a></li>
         <li><a href="rota.html" data-i18n="nav.rota">Rota 2026</a></li>
         <li><a href="galeria.html" data-i18n="nav.galeria">Galeria</a></li>
